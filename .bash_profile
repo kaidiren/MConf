@@ -19,4 +19,3 @@ export PS1='\h@mac:\w\$ '
 
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
-export HOMEBREW_GITHUB_API_TOKEN="f47db601d69f29f1ba0087f1900969b9aab8e40f"
