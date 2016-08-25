@@ -160,6 +160,7 @@ let g:EasyClipPreserveCursorPositionAfterYank = 1
 
 let g:NERDSpaceDelims = 1
 let g:NERDDefaultAlign = 'left'
+let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
 
 "打开powerline
 set laststatus=2
@@ -167,3 +168,5 @@ set laststatus=2
 " 快捷键映射
 let mapleader = " "
 let g:vim_json_syntax_conceal = 0
+
+autocmd filetype crontab setlocal nobackup nowritebackup

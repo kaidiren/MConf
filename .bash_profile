@@ -19,3 +19,5 @@ export PS1='\h@mac:\w\$ '
 
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+export EDITOR=vim
