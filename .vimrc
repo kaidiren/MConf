@@ -160,7 +160,7 @@ let g:EasyClipPreserveCursorPositionAfterYank = 1
 
 let g:NERDSpaceDelims = 1
 let g:NERDDefaultAlign = 'left'
-let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
+let g:NERDCustomDelimiters = { 'javascript': { 'left': '/**','right': '*/' } }
 
 "打开powerline
 set laststatus=2
