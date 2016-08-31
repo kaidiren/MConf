@@ -159,6 +159,7 @@ let g:EasyClipPreserveCursorPositionAfterYank = 1
 "let g:EasyClipShareYanks = 1
 
 let g:NERDSpaceDelims = 1
+let g:NERDCompactSexyComs = 1
 let g:NERDDefaultAlign = 'left'
 "let g:NERDCustomDelimiters = { 'javascript': { 'left': '/*','right': '*/' } }
 
