@@ -45,6 +45,7 @@ Plugin 'https://github.com/honza/vim-snippets.git'
 Plugin 'https://github.com/scrooloose/nerdcommenter.git'
 Plugin 'https://github.com/elzr/vim-json.git'
 Plugin 'https://github.com/gioele/vim-autoswap.git'
+Plugin 'https://github.com/EinfachToll/DidYouMean.git'
 
 " 注释快捷键
 " leader cs 
