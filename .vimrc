@@ -159,11 +159,11 @@ let g:EasyClipAlwaysMoveCursorToEndOfPaste = 1
 let g:EasyClipPreserveCursorPositionAfterYank = 1
 "let g:EasyClipShareYanks = 1
 
-let g:NERDSpaceDelims = 1
+"let g:NERDSpaceDelims = 1
 let g:NERDDefaultAlign = 'left'
 let g:NERDCommentEmptyLines = 1
 let g:NERDTrimTrailingWhitespace = 1
-let g:NERDCustomDelimiters = { 'javascript': { 'left': '/*','right': '*/' } }
+"let g:NERDCustomDelimiters = { 'javascript': { 'left': '/*','right': '*/' } }
 
 "打开powerline
 set laststatus=2
