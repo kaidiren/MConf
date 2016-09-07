@@ -174,3 +174,11 @@ let g:vim_json_syntax_conceal = 0
 
 " crontab -e edit bug
 autocmd filetype crontab setlocal nobackup nowritebackup
+
+func! GoToLineHead()
+  call cursor(line("."), 1)
+endfunc
+
+func! GoToLineEnd()
+  call cursor(line("."), 1000)
+endfunc
