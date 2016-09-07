@@ -49,7 +49,7 @@ Plugin 'https://github.com/EinfachToll/DidYouMean.git'
 
 " 注释快捷键
 " leader cs 
-" leader cc
+" leader cl
 " leader cu 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
