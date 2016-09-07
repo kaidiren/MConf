@@ -174,17 +174,17 @@ let g:vim_json_syntax_conceal = 0
 " crontab -e edit bug
 autocmd filetype crontab setlocal nobackup nowritebackup
 
-func! GoToLineHead()
+func! PutCursorToLineHead()
   call cursor(line("."), 1)
 endfunc
 
-func! GoToLineEnd()
+func! PutCursorToLineEnd()
   let line = getline(".")
   let end = strlen(line)
   call cursor(line("."), end)
 endfunc
 
-nmap <silent> <C-a> :call GoToLineHead()<CR>
-nmap <silent> <C-e> :call GoToLineEnd()<CR>
-imap <silent> <C-a> <esc>:call GoToLineHead()<CR>I
-imap <silent> <C-e> <esc>:call GoToLineEnd()<CR>A
+nmap <silent> <C-a> :call PutCursorToLineHead()<CR>
+nmap <silent> <C-e> :call PutCursorToLineEnd()<CR>
+imap <silent> <C-a> <esc>:call PutCursorToLineHead()<CR>I
+imap <silent> <C-e> <esc>:call PutCursorToLineEnd()<CR>A
