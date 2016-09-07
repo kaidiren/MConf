@@ -189,4 +189,4 @@ endfunc
 nmap <silent> <C-a> :call PutCursorToLineHead()<CR>eb
 nmap <silent> <C-e> :call PutCursorToLineEnd()<CR>be
 imap <silent> <C-a> <esc>:call PutCursorToLineHead()<CR>wI
-imap <silent> <C-e> <esc>:call PutCursorToLineEnd()<CR>eba
+imap <silent> <C-e> <esc>:call PutCursorToLineEnd()<CR>ebA
