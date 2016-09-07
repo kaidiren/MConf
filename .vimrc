@@ -184,5 +184,5 @@ endfunc
 
 nmap <C-a> :call GoToLineHead()<CR>
 nmap <C-e> :call GoToLineEnd()<CR>
-imap <C-a> <esc>:call GoToLineHead()I<CR>
-imap <C-e> <esc>:call GoToLineEnd()A<CR>
+imap <C-a> <esc>:call GoToLineHead()<CR>I
+imap <C-e> <esc>:call GoToLineEnd()<CR>A
