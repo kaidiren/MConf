@@ -184,6 +184,7 @@ func! PutCursorToLineEnd()
   call cursor(line("."), end)
 endfunc
 
+" move to head or end like bash command
 nmap <silent> <C-a> :call PutCursorToLineHead()<CR>
 nmap <silent> <C-e> :call PutCursorToLineEnd()<CR>
 imap <silent> <C-a> <esc>:call PutCursorToLineHead()<CR>I
