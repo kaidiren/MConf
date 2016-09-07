@@ -185,7 +185,7 @@ func! PutCursorToLineEnd()
 endfunc
 
 " move to head or end like bash command
-nmap <silent> <C-a> :call PutCursorToLineHead()<CR>
+nmap <silent> <C-a> :call PutCursorToLineHead()<CR>w
 nmap <silent> <C-e> :call PutCursorToLineEnd()<CR>
-imap <silent> <C-a> <esc>:call PutCursorToLineHead()<CR>I
+imap <silent> <C-a> <esc>:call PutCursorToLineHead()<CR>wI
 imap <silent> <C-e> <esc>:call PutCursorToLineEnd()<CR>A
