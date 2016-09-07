@@ -179,7 +179,9 @@ func! GoToLineHead()
 endfunc
 
 func! GoToLineEnd()
-  call cursor(line("."), 1000)
+  let line = getline(".")
+  let end = strlen(line)
+  call cursor(line("."), end)
 endfunc
 
 nmap <silent> <C-a> :call GoToLineHead()<CR>
