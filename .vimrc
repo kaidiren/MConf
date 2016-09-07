@@ -182,7 +182,7 @@ func! GoToLineEnd()
   call cursor(line("."), 1000)
 endfunc
 
-nmap <C-a> :call GoToLineHead()<CR>
-nmap <C-e> :call GoToLineEnd()<CR>
-imap <C-a> <esc>:call GoToLineHead()<CR>I
-imap <C-e> <esc>:call GoToLineEnd()<CR>A
+nmap <silent> <C-a> :call GoToLineHead()<CR>
+nmap <silent> <C-e> :call GoToLineEnd()<CR>
+imap <silent> <C-a> <esc>:call GoToLineHead()<CR>I
+imap <silent> <C-e> <esc>:call GoToLineEnd()<CR>A
