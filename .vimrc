@@ -185,6 +185,7 @@ func! PutCursorToLineEnd()
 endfunc
 
 " move to head or end like bash command
+" use b or w to skip spaces
 nmap <silent> <C-a> :call PutCursorToLineHead()<CR>w
 nmap <silent> <C-e> :call PutCursorToLineEnd()<CR>b
 imap <silent> <C-a> <esc>:call PutCursorToLineHead()<CR>wI
