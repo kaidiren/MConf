@@ -192,3 +192,7 @@ nmap <silent> <C-e> :call PutCursorToLineEnd()<CR>be
 imap <silent> <C-a> <esc>:call PutCursorToLineHead()<CR>wI
 imap <silent> <C-e> <esc>:call PutCursorToLineEnd()<CR>bea
 let g:ycm_global_ycm_extra_conf = '/Users/rkd/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+" UltiSnips triggering
+let g:UltiSnipsExpandTrigger = '<C-j>'
+let g:UltiSnipsJumpForwardTrigger = '<C-j>'
+let g:UltiSnipsJumpBackwardTrigger = '<C-k>'
