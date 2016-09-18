@@ -47,7 +47,7 @@ Plugin 'https://github.com/elzr/vim-json.git'
 Plugin 'https://github.com/gioele/vim-autoswap.git'
 Plugin 'https://github.com/EinfachToll/DidYouMean.git'
 Plugin 'https://github.com/wincent/terminus.git'
-Plugin 'https://github.com/haya14busa/incsearch.vim.git'
+"Plugin 'https://github.com/haya14busa/incsearch.vim.git'
 
 " 注释快捷键
 " leader cs 
@@ -75,7 +75,7 @@ set shiftwidth=2
 set expandtab
 set textwidth=79
 set backspace=2
-
+set hlsearch
 "默认编码
 set encoding=utf-8
 
@@ -199,7 +199,3 @@ let g:UltiSnipsExpandTrigger = '<C-j>'
 let g:UltiSnipsJumpForwardTrigger = '<C-j>'
 let g:UltiSnipsJumpBackwardTrigger = '<C-k>'
 let g:TerminusInsertCursorShape = 0
-
-map / <Plug>(incsearch-forward)
-map ? <Plug>(incsearch-backward)
-map g/ <Plug>(incsearch-stay)
