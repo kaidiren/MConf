@@ -46,7 +46,7 @@ Plugin 'https://github.com/scrooloose/nerdcommenter.git'
 Plugin 'https://github.com/elzr/vim-json.git'
 Plugin 'https://github.com/gioele/vim-autoswap.git'
 Plugin 'https://github.com/EinfachToll/DidYouMean.git'
-Plugin 'https://github.com/wincent/terminus.git'
+"Plugin 'https://github.com/wincent/terminus.git'
 "Plugin 'https://github.com/haya14busa/incsearch.vim.git'
 
 " 注释快捷键
