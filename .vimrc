@@ -74,7 +74,7 @@ set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 set expandtab
-set textwidth=79
+set textwidth=120
 set backspace=2
 set hlsearch
 "默认编码
