@@ -200,3 +200,5 @@ let g:UltiSnipsExpandTrigger = '<C-j>'
 let g:UltiSnipsJumpForwardTrigger = '<C-j>'
 let g:UltiSnipsJumpBackwardTrigger = '<C-k>'
 let g:TerminusInsertCursorShape = 0
+
+let g:rustfmt_autosave = 1
