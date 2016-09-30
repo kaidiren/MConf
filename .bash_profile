@@ -23,3 +23,5 @@ test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shel
 export EDITOR=vim
 
 source ~/.env
+
+export GOPATH="/Users/rkd/.gopath"
