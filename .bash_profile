@@ -24,4 +24,4 @@ export EDITOR=vim
 
 source ~/.env
 
-export GOPATH="/Users/rkd/go"
+export GOPATH="/Users/rkd/./.gopath"
