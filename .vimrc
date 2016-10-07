@@ -109,7 +109,7 @@ set background=dark
 colorscheme solarized
 
 "NERDTree
-map <C-t> :NERDTreeToggle<CR>
+map <silent> <C-t> :NERDTreeToggle<CR>
 
 "进入 vim 自动打开 NERDTree
 " autocmd vimenter * NERDTreeToggle
