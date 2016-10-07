@@ -50,7 +50,6 @@ Plugin 'https://github.com/wincent/terminus.git'
 "Plugin 'https://github.com/haya14busa/incsearch.vim.git'
 Plugin 'https://github.com/rust-lang/rust.vim.git'
 Plugin 'https://github.com/fatih/vim-go.git'
-Plugin 'https://github.com/rust-lang/rust.vim.git'
 
 " 注释快捷键
 " leader cs 
