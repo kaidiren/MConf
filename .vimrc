@@ -204,4 +204,4 @@ let g:TerminusInsertCursorShape = 0
 
 let g:rustfmt_autosave = 1
 
-vmap <silent> <D-c><CR>
+vmap <silent> <D-c> y <CR>
