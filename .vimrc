@@ -173,6 +173,8 @@ set laststatus=2
 
 " 快捷键映射
 "let mapleader = " "
+" leader 的默认值为 \
+
 let g:vim_json_syntax_conceal = 0
 " crontab -e edit bug
 autocmd filetype crontab setlocal nobackup nowritebackup
