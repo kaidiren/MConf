@@ -109,7 +109,6 @@ set background=dark
 colorscheme solarized
 
 "NERDTree
-" 太卡了，不用了
 map <C-t> :NERDTreeToggle<CR>
 
 "进入 vim 自动打开 NERDTree
@@ -167,7 +166,6 @@ let g:NERDSpaceDelims = 1
 let g:NERDDefaultAlign = 'left'
 let g:NERDCommentEmptyLines = 1
 let g:NERDTrimTrailingWhitespace = 1
-"let g:NERDCustomDelimiters = { 'javascript': { 'left': '/**','right': '**/' } }
 
 "打开powerline
 set laststatus=2
