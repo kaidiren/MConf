@@ -189,7 +189,7 @@ endfunc
 
 " move to head or end like bash command
 " use built-in short key to skip spaces
-nmap <silent> <C-a> :call PutCursorToLineHead()<CR>eb
+nmap <silent> <leader>a :call PutCursorToLineHead()<CR>eb
 nmap <silent> <C-e> :call PutCursorToLineEnd()<CR>be
 imap <silent> <C-a> <esc>:call PutCursorToLineHead()<CR>wI
 imap <silent> <C-e> <esc>:call PutCursorToLineEnd()<CR>bea
