@@ -204,6 +204,7 @@ let g:TerminusInsertCursorShape = 0
 
 let g:rustfmt_autosave = 1
 
+" 利用Tab键和Shift-Tab键来缩进文本
 nmap <tab> V>
 nmap <s-tab> V<
 vmap <tab> >gv
