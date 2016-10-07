@@ -153,7 +153,8 @@ let g:ycm_complete_in_comments = 1
 let g:ycm_seed_identifiers_with_syntax = 0
 
 
-set updatetime=100
+set updatetime=10
+
 let g:gitgutter_sign_added = '++'
 let g:gitgutter_sign_modified = '**'
 let g:gitgutter_sign_removed = '--'
