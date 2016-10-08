@@ -172,7 +172,7 @@ let g:NERDTrimTrailingWhitespace = 1
 set laststatus=2
 
 " 快捷键映射
-let mapleader = "\\"
+let mapleader = ","
 set timeoutlen=1000
 " leader 的默认值为 \
 
