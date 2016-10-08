@@ -172,7 +172,8 @@ let g:NERDTrimTrailingWhitespace = 1
 set laststatus=2
 
 " 快捷键映射
-let mapleader = "M"
+let mapleader = " "
+set timeoutlen=50
 " leader 的默认值为 \
 
 let g:vim_json_syntax_conceal = 0
