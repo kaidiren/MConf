@@ -47,7 +47,7 @@ Plugin 'https://github.com/elzr/vim-json.git'
 Plugin 'https://github.com/gioele/vim-autoswap.git'
 Plugin 'https://github.com/EinfachToll/DidYouMean.git'
 Plugin 'https://github.com/wincent/terminus.git'
-Plugin 'https://github.com/haya14busa/incsearch.vim.git'
+"Plugin 'https://github.com/haya14busa/incsearch.vim.git'
 Plugin 'https://github.com/rust-lang/rust.vim.git'
 Plugin 'https://github.com/fatih/vim-go.git'
 
@@ -77,7 +77,7 @@ set shiftwidth=2
 set expandtab
 set textwidth=120
 set backspace=2
-"set hlsearch
+set hlsearch
 "默认编码
 set encoding=utf-8
 
@@ -214,7 +214,4 @@ nmap <s-tab> V<
 vmap <tab> >gv
 vmap <s-tab> <gv
 
-
-
-map /  <Plug>(incsearch-forward)
-map ?  <Plug>(incsearch-backward)
+nnoremap <leader><Esc> :<C-u>nohlsearch<CR>
