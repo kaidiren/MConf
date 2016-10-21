@@ -180,20 +180,20 @@ let g:vim_json_syntax_conceal = 0
 " crontab -e edit bug
 autocmd filetype crontab setlocal nobackup nowritebackup
 
-func! PutCursorToLineHead()
-  call cursor(line("."), 1)
-endfunc
-
-func! PutCursorToLineEnd()
-  let line = getline(".")
-  let end = strlen(line)
-  call cursor(line("."), end)
-endfunc
+" func! PutCursorToLineHead()
+"   call cursor(line("."), 1)
+" endfunc
+"
+" func! PutCursorToLineEnd()
+"   let line = getline(".")
+"   let end = strlen(line)
+"   call cursor(line("."), end)
+" endfunc
 
 " move to head or end like bash command
 " use built-in short key to skip spaces
-nmap <silent> <leader>a :call PutCursorToLineHead()<CR>eb
-nmap <silent> <leader>e :call PutCursorToLineEnd()<CR>be
+"nmap <silent> <leader>a :call PutCursorToLineHead()<CR>eb
+"nmap <silent> <leader>e :call PutCursorToLineEnd()<CR>be
 "imap <silent> <leader>a <esc>:call PutCursorToLineHead()<CR>wI
 "imap <silent> <leader>e <esc>:call PutCursorToLineEnd()<CR>bea
 
