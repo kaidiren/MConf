@@ -77,7 +77,7 @@ set shiftwidth=2
 set expandtab
 set textwidth=120
 set backspace=2
-set hlsearch
+"set hlsearch
 "默认编码
 set encoding=utf-8
 
