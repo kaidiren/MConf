@@ -214,4 +214,4 @@ nmap <s-tab> V<
 vmap <tab> >gv
 vmap <s-tab> <gv
 
-nnoremap <leader><Esc> :<C-u>nohlsearch<CR>
+nnoremap <silent> <leader><Esc> :<C-u>nohlsearch<CR>
