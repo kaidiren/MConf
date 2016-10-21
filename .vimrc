@@ -47,7 +47,7 @@ Plugin 'https://github.com/elzr/vim-json.git'
 Plugin 'https://github.com/gioele/vim-autoswap.git'
 Plugin 'https://github.com/EinfachToll/DidYouMean.git'
 Plugin 'https://github.com/wincent/terminus.git'
-"Plugin 'https://github.com/haya14busa/incsearch.vim.git'
+Plugin 'https://github.com/haya14busa/incsearch.vim.git'
 Plugin 'https://github.com/rust-lang/rust.vim.git'
 Plugin 'https://github.com/fatih/vim-go.git'
 
@@ -213,3 +213,9 @@ nmap <tab> V>
 nmap <s-tab> V<
 vmap <tab> >gv
 vmap <s-tab> <gv
+
+
+
+map /  <Plug>(incsearch-forward)
+map ?  <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)
