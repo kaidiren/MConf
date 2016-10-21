@@ -172,7 +172,7 @@ let g:NERDTrimTrailingWhitespace = 1
 set laststatus=2
 
 " 快捷键映射
-"let mapleader = ""
+let mapleader = " "
 set timeoutlen=1000
 " leader 的默认值为 \
 
@@ -194,8 +194,8 @@ endfunc
 " use built-in short key to skip spaces
 nmap <silent> <leader>a :call PutCursorToLineHead()<CR>eb
 nmap <silent> <leader>e :call PutCursorToLineEnd()<CR>be
-imap <silent> <leader>a <esc>:call PutCursorToLineHead()<CR>wI
-imap <silent> <leader>e <esc>:call PutCursorToLineEnd()<CR>bea
+"imap <silent> <leader>a <esc>:call PutCursorToLineHead()<CR>wI
+"imap <silent> <leader>e <esc>:call PutCursorToLineEnd()<CR>bea
 
 let g:ycm_global_ycm_extra_conf = '/Users/rkd/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 
