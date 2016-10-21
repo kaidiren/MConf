@@ -173,7 +173,7 @@ set laststatus=2
 
 " 快捷键映射
 let mapleader = " "
-set timeoutlen=1000
+set timeoutlen=500
 " leader 的默认值为 \
 
 let g:vim_json_syntax_conceal = 0
