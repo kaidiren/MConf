@@ -2,7 +2,16 @@
   "env": {
     "node": true,
     "es6": true,
+    "es7": true,
+    "es8": true,
     "mocha": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 5,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
   },
   "rules": {
     "comma-dangle": [
