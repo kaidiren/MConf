@@ -215,3 +215,4 @@ vmap <tab> >gv
 vmap <s-tab> <gv
 
 nnoremap <silent> <leader><Esc> :<C-u>nohlsearch<CR>
+nnoremap <silent> <leader>y viwy
