@@ -98,8 +98,6 @@ set clipboard=unnamed
 "主题
 syntax enable
 set background=dark
-set t_Co=256
-let g:solarized_termcolors=256
 colorscheme solarized
 
 "NERDTree
