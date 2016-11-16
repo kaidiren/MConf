@@ -1,7 +1,5 @@
 {
-  "ecmaVersions": {
-    "ecmaVersion6": true
-  },
+  "ecmaVersion": 8,
   "libs": [
     "node",
     "async",
