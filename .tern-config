@@ -1,0 +1,22 @@
+{
+  "ecmaVersions": {
+    "ecmaVersion6": true
+  },
+  "libs": [
+    "node",
+    "async",
+    "bluebird",
+    "lodash"
+  ],
+  "async": true,
+  "plugins": {
+    "node": {
+      "dontLoad": false,
+      "modules": {}
+    },
+    "es_modules": {},
+    "complete_strings": {
+      "maxLength": 15
+    }
+  }
+}
