@@ -14,6 +14,7 @@
       "dontLoad": false,
       "modules": {}
     },
+    "modules": {},
     "es_modules": {},
     "complete_strings": {
       "maxLength": 15
