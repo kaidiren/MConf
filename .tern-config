@@ -8,6 +8,8 @@
   ],
   "async": true,
   "plugins": {
+    "commonjs": {},
+    "node_resolve": {},
     "node": {
       "dontLoad": false,
       "modules": {}
