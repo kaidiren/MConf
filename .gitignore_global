@@ -1,0 +1,10 @@
+#file
+*~
+.DS_Store
+*.swp
+*.pyc
+*.pyo
+*.log
+
+#dir
+node_modules

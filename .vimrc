@@ -145,7 +145,7 @@ let g:ycm_complete_in_comments = 1
 let g:ycm_seed_identifiers_with_syntax = 0
 
 
-set updatetime=1
+set updatetime=5
 
 let g:gitgutter_sign_added = '++'
 let g:gitgutter_sign_modified = '**'
