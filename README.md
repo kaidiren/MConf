@@ -9,5 +9,8 @@ the config files in my mac for backup.
 file at `/var/at/tabs`
 
 to add file for eg:
-`cd /path/to/MConf`
-`ln ~/.vimrc .`
+
+```
+cd /path/to/MConf
+ln ~/.vimrc .
+```
