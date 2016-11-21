@@ -10,10 +10,6 @@ alias awk='gawk'
 
 source ~/.nvm/nvm.sh
 
-if [ -f ~/.git-completion.bash ]; then
-  . ~/.git-completion.bash
-fi
-
 export PS1='\h@mac:\w\$ '
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
