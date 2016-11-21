@@ -25,6 +25,7 @@ export GOPATH="/Users/rkd/./.gopath"
 cd() {
   flag=1
   oldpath=$1
+  echo ${#oldpath}
   newpath=""
   for ((i=0; i<${#oldpath}; i++)); do
     one="${oldpath:$i:1}"
