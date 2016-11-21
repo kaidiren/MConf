@@ -23,7 +23,8 @@ source ~/.env
 export GOPATH="/Users/rkd/./.gopath"
 
 cd() {
-  echo $1
+  echo 1;
+  echo $1;
   if [ "$1" = "public_html" ]; then
       echo "current dir is my dir"
   fi
