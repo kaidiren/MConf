@@ -24,11 +24,11 @@ export GOPATH="/Users/rkd/./.gopath"
 
 cd() {
   flag=1
-  foo="$1"
+  oldpath="$1"
   newpath=""
-  for ((i=0; i<${#foo}; i++)); do
+  for ((i=0; i<${#oldpath}; i++)); do
     echo $i;
-    one="${foo:$i:1}"
+    one="${oldpath:$i:1}"
     echo $one
     if [ "." != "$one" ]
     then
