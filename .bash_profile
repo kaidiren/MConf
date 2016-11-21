@@ -21,3 +21,11 @@ export EDITOR=vim
 source ~/.env
 
 export GOPATH="/Users/rkd/./.gopath"
+
+cd() {
+  echo $1
+  if [ "$1" = "public_html" ]; then
+      echo "current dir is my dir"
+  fi
+  builtin cd "$1"
+}
