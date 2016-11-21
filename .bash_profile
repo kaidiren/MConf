@@ -28,6 +28,7 @@ cd() {
   newpath=""
   for ((i=0; i<${#oldpath}; i++)); do
     one="${oldpath:$i:1}"
+    echo $one
     if [ "." != "$one" ]
     then
       flag=0
