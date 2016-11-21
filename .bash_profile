@@ -24,18 +24,17 @@ export GOPATH="/Users/rkd/./.gopath"
 
 cd() {
   if [ "$1" -eq "." ]; then
-  builtin cd .
+    builtin cd .
   elif [ "$1" -eq ".." ]; then
-  builtin cd ..
+    builtin cd ..
   elif [ "$1" -eq "..." ]; then
-  builtin cd ../..
+    builtin cd ../..
   elif [ "$1" -eq "...." ]; then
-  builtin cd ../../..
+    builtin cd ../../..
   elif [ "$1" -eq ".." ]; then
-  builtin cd ../../../..
+    builtin cd ../../../..
   elif [ "$1" -eq ".." ]; then
-  builtin cd ../../../../..
-  elif
-  builtin cd "$1"
+    builtin cd ../../../../..
   fi
+  builtin cd "$1"
 }
