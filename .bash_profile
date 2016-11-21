@@ -39,3 +39,30 @@ cd() {
   fi
   builtin cd "$1"
 }
+
+cd() {
+flag=1
+foo="$1"
+newpath=""
+for ((i=0; i<${#foo}; i++)); do
+  echo $i;
+  one="${foo:$i:1}"
+  echo $one
+  if [ "." != "$one" ]
+  then
+    flag=0
+  else
+    if [ $i == 1 ]
+    then
+      newpath="$newpath.."
+    elif [ $i -gt 1 ]
+      then
+        newpath="$newpath/.."
+    fi
+  fi
+done
+if [ "flag" == 0]; then
+  builtin cd "$1"
+else
+  builtin cd "$newpath"
+}
