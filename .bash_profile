@@ -22,6 +22,7 @@ source ~/.env
 
 export GOPATH="/Users/rkd/./.gopath"
 
+###smart cd start###
 cd() {
   flag=1
   oldpath=$1
@@ -50,3 +51,4 @@ cd() {
     builtin cd "$newpath"
   fi
 }
+###smart cd end###
