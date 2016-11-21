@@ -24,7 +24,7 @@ export GOPATH="/Users/rkd/./.gopath"
 
 cd() {
   echo "$1";
-  if [ "$1" -eq "." ]; then
+  if [ "$1" -eq "\." ]; then
     builtin cd .
   elif [ "$1" -eq ".." ]; then
     builtin cd ..
