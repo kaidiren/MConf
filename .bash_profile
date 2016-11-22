@@ -52,3 +52,9 @@ cd() {
   fi
 }
 ###smart cd end###
+
+
+
+if [ -f "~/.smartcd.sh" ]; then
+  source ~/.smartcd.sh
+fi
