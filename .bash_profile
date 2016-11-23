@@ -25,3 +25,6 @@ export GOPATH="/Users/rkd/./.gopath"
 if [ -f "~/.smartcd.sh" ]; then
   source ~/.smartcd.sh
 fi
+
+export TNVM_DIR="/Users/rkd/.tnvm"
+[ -s "$TNVM_DIR/tnvm.sh" ] && . "$TNVM_DIR/tnvm.sh"  # This loads nvm
