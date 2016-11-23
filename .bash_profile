@@ -22,7 +22,6 @@ source ~/.env
 
 export GOPATH="/Users/rkd/./.gopath"
 
-if [ -f "~/.smartcd.sh" ]; then
-  echo 'hahahah'
+if [ -f ~/.smartcd.sh ]; then
   source ~/.smartcd.sh
 fi
