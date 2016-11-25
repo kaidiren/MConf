@@ -22,7 +22,7 @@ Plugin 'https://github.com/VundleVim/Vundle.vim.git'
 Plugin 'https://github.com/vim-scripts/L9.git'
 Plugin 'https://github.com/tpope/vim-fugitive.git'
 Plugin 'https://github.com/Valloric/YouCompleteMe.git'
-"Plugin 'https://github.com/scrooloose/syntastic.git'
+Plugin 'https://github.com/scrooloose/syntastic.git'
 Plugin 'https://github.com/scrooloose/nerdtree.git'
 Plugin 'https://github.com/altercation/vim-colors-solarized.git'
 Plugin 'https://github.com/Lokaltog/vim-powerline.git'
@@ -43,8 +43,7 @@ Plugin 'https://github.com/EinfachToll/DidYouMean.git'
 Plugin 'https://github.com/wincent/terminus.git'
 Plugin 'https://github.com/rust-lang/rust.vim.git'
 Plugin 'https://github.com/fatih/vim-go.git'
-Plugin 'https://github.com/w0rp/ale.git'
-let g:ale_sign_column_always = 1
+
 " 注释快捷键
 " leader cs 
 " leader cl
