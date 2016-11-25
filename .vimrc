@@ -45,6 +45,7 @@ Plugin 'https://github.com/rust-lang/rust.vim.git'
 Plugin 'https://github.com/fatih/vim-go.git'
 Plugin 'https://github.com/ybian/smartim.git'
 
+let g:smartim_default = 'com.apple.keylayout.US'
 " 注释快捷键
 " leader cs 
 " leader cl
