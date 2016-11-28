@@ -8,6 +8,8 @@ alias ll='ls -G'
 alias la='ls -Ga'
 alias awk='gawk'
 alias emacs='emacs -nw'
+alias e='emacs -nw'
+alias v='vim'
 
 source ~/.nvm/nvm.sh
 
