@@ -9,7 +9,7 @@ alias la='ls -Ga'
 alias awk='gawk'
 alias emacs='emacs -nw'
 alias e='emacs -nw'
-alias v='vim'
+alias vi='vim'
 
 source ~/.nvm/nvm.sh
 
