@@ -7,6 +7,7 @@ alias l='ls -G'
 alias ll='ls -G'
 alias la='ls -Ga'
 alias awk='gawk'
+alias emacs='emacs -nw'
 
 source ~/.nvm/nvm.sh
 
