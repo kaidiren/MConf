@@ -216,5 +216,5 @@ nnoremap <silent> <leader>y viwy
 vnoremap <silent> <leader>y iwy
 
 
-autocmd VimEnter * call SmartIM_SelectSaved()
-autocmd VimLeavePre * call SmartIM_SelectDefault()
+"autocmd VimEnter * call SmartIM_SelectSaved()
+"autocmd VimLeavePre * call SmartIM_SelectDefault()
