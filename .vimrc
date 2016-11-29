@@ -214,3 +214,6 @@ nnoremap <silent> <leader><Esc> :<C-u>nohlsearch<CR>
 " 复制光标所在的单词
 nnoremap <silent> <leader>y viwy
 vnoremap <silent> <leader>y iwy
+
+
+autocmd VimLeavePre * call SmartIM_SelectDefault()
