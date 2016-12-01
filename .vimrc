@@ -44,7 +44,6 @@ Plugin 'https://github.com/wincent/terminus.git'
 Plugin 'https://github.com/rust-lang/rust.vim.git'
 Plugin 'https://github.com/fatih/vim-go.git'
 Plugin 'https://github.com/kaidiren/smartim.git'
-"Plugin 'https://github.com/wakatime/vim-wakatime.git'
 Plugin 'https://github.com/dietsche/vim-lastplace.git'
 
 let g:smartim_default = 'com.apple.keylayout.US'
