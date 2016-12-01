@@ -156,7 +156,6 @@ let g:gitgutter_sign_removed = '--'
 
 let g:EasyClipAlwaysMoveCursorToEndOfPaste = 1
 let g:EasyClipPreserveCursorPositionAfterYank = 1
-"let g:EasyClipShareYanks = 1
 
 let g:NERDSpaceDelims = 1
 let g:NERDDefaultAlign = 'left'
@@ -172,25 +171,9 @@ set timeoutlen=500
 " leader 的默认值为 \
 
 let g:vim_json_syntax_conceal = 0
+
 " crontab -e edit bug
 autocmd filetype crontab setlocal nobackup nowritebackup
-
-" func! PutCursorToLineHead()
-"   call cursor(line("."), 1)
-" endfunc
-"
-" func! PutCursorToLineEnd()
-"   let line = getline(".")
-"   let end = strlen(line)
-"   call cursor(line("."), end)
-" endfunc
-
-" move to head or end like bash command
-" use built-in short key to skip spaces
-"nmap <silent> <leader>a :call PutCursorToLineHead()<CR>eb
-"nmap <silent> <leader>e :call PutCursorToLineEnd()<CR>be
-"imap <silent> <leader>a <esc>:call PutCursorToLineHead()<CR>wI
-"imap <silent> <leader>e <esc>:call PutCursorToLineEnd()<CR>bea
 
 let g:ycm_global_ycm_extra_conf = '/Users/rkd/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 
@@ -203,7 +186,7 @@ let g:TerminusInsertCursorShape = 0
 let g:rustfmt_autosave = 1
 
 " 利用Tab键和Shift-Tab键来缩进文本
-" V 选中整行 > 向右说缩进 < 向左缩进
+" V 选中整行 > 向右缩进 < 向左缩进
 nmap <tab> V>
 nmap <s-tab> V<
 vmap <tab> >gv
