@@ -218,5 +218,8 @@ vnoremap <silent> <leader>y iwy
 
 " 开打文件时跳到上次关闭文件时光标所在位置
 if has("autocmd")
-  au BufReadPost * if line("`\"") > 1 && line("`\"") <= line("$") | exe "normal! g`\"" | endif
+    autocmd BufReadPost *
+    \ if line("\'") > 0 && line("\'") <= line("$") |
+        \ exe "normal g`" |
+    \ endif
 endif
