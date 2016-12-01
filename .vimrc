@@ -44,7 +44,7 @@ Plugin 'https://github.com/wincent/terminus.git'
 Plugin 'https://github.com/rust-lang/rust.vim.git'
 Plugin 'https://github.com/fatih/vim-go.git'
 Plugin 'https://github.com/kaidiren/smartim.git'
-Plugin 'https://github.com/wakatime/vim-wakatime.git'
+"Plugin 'https://github.com/wakatime/vim-wakatime.git'
 
 let g:smartim_default = 'com.apple.keylayout.US'
 " 注释快捷键
@@ -215,7 +215,3 @@ nnoremap <silent> <leader><Esc> :<C-u>nohlsearch<CR>
 " 复制光标所在的单词
 nnoremap <silent> <leader>y viwy
 vnoremap <silent> <leader>y iwy
-
-
-"autocmd VimEnter * call SmartIM_SelectSaved()
-"autocmd VimLeavePre * call SmartIM_SelectDefault()
