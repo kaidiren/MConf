@@ -45,7 +45,6 @@ Plugin 'https://github.com/rust-lang/rust.vim.git'
 Plugin 'https://github.com/fatih/vim-go.git'
 Plugin 'https://github.com/kaidiren/smartim.git'
 Plugin 'https://github.com/dietsche/vim-lastplace.git'
-Plugin 'https://github.com/terryma/vim-smooth-scroll.git'
 
 let g:smartim_default = 'com.apple.keylayout.US'
 " 注释快捷键
@@ -199,8 +198,3 @@ nnoremap <silent> <leader><Esc> :<C-u>nohlsearch<CR>
 " 复制光标所在的单词
 nnoremap <silent> <leader>y viwy
 vnoremap <silent> <leader>y iwy
-
-noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 0, 2)<CR>
-noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 0, 2)<CR>
-noremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 0, 4)<CR>
-noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 0, 4)<CR>
