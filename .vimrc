@@ -215,3 +215,8 @@ nnoremap <silent> <leader><Esc> :<C-u>nohlsearch<CR>
 " 复制光标所在的单词
 nnoremap <silent> <leader>y viwy
 vnoremap <silent> <leader>y iwy
+
+" 开打文件时跳到上次关闭文件时光标所在位置
+if has("autocmd")
+  au BufReadPost * if line("`\"") > 1 && line("`\"") <= line("$") | exe "normal! g`\"" | endif
+endif
