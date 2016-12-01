@@ -45,6 +45,7 @@ Plugin 'https://github.com/rust-lang/rust.vim.git'
 Plugin 'https://github.com/fatih/vim-go.git'
 Plugin 'https://github.com/kaidiren/smartim.git'
 "Plugin 'https://github.com/wakatime/vim-wakatime.git'
+Plugin 'https://github.com/dietsche/vim-lastplace.git'
 
 let g:smartim_default = 'com.apple.keylayout.US'
 " 注释快捷键
@@ -215,11 +216,3 @@ nnoremap <silent> <leader><Esc> :<C-u>nohlsearch<CR>
 " 复制光标所在的单词
 nnoremap <silent> <leader>y viwy
 vnoremap <silent> <leader>y iwy
-
-" 开打文件时跳到上次关闭文件时光标所在位置
-if has("autocmd")
-  autocmd BufReadPost *
-  \ if line("\'") > 0 && line("\'") <= line("$") |
-    \ exe "normal g`" |
-  \ endif
-endif
