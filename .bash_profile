@@ -10,6 +10,7 @@ alias awk='gawk'
 alias emacs='emacs -nw'
 alias e='emacs -nw'
 alias vi='vim'
+alias node='node --harmony'
 
 source ~/.nvm/nvm.sh
 
