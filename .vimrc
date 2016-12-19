@@ -146,7 +146,7 @@ let g:ycm_min_num_of_chars_for_completion = 2
 let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_complete_in_comments = 1
 let g:ycm_seed_identifiers_with_syntax = 0
-
+let g:ycm_path_to_python_interpreter='/usr/local/bin/python'
 
 set updatetime=5
 
