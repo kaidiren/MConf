@@ -14,9 +14,6 @@
       "dontLoad": false,
       "modules": {}
     },
-    "loadEagerly": [
-      "/Users/rkd/globals.js"
-    ],
     "modules": {},
     "es_modules": {},
     "complete_strings": {
