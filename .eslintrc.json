@@ -6,6 +6,10 @@
     "mocha": true,
     "commonjs": true
   },
+  "globals": {
+    "require": true,
+    "global": true
+  },
   "parserOptions": {
     "ecmaVersion": 8,
     "sourceType": "module",
