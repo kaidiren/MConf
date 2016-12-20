@@ -192,4 +192,8 @@ let g:smartim_default = 'com.apple.keylayout.US'
 " 注释快捷键
 " leader cs 
 " leader cl
-" leader cu 
+" leader cu
+
+" 在错误信息间跳转
+nnoremap <silent> <leader>ln :lnext<CR>
+nnoremap <silent> <leader>lp :lpre<CR>
