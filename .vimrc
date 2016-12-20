@@ -40,12 +40,6 @@ Plugin 'https://github.com/fatih/vim-go.git'
 Plugin 'https://github.com/kaidiren/smartim.git'
 Plugin 'https://github.com/dietsche/vim-lastplace.git'
 
-let g:smartim_default = 'com.apple.keylayout.US'
-
-" 注释快捷键
-" leader cs 
-" leader cl
-" leader cu 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -192,3 +186,10 @@ nnoremap <silent> <leader><Esc> :<C-u>nohlsearch<CR>
 " 复制光标所在的单词
 nnoremap <silent> <leader>y viwy
 vnoremap <silent> <leader>y iwy
+
+let g:smartim_default = 'com.apple.keylayout.US'
+
+" 注释快捷键
+" leader cs 
+" leader cl
+" leader cu 
