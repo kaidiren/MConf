@@ -12,12 +12,6 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'https://github.com/VundleVim/Vundle.vim.git'
 
-" plugin from http://vim-scripts.org/vim/scripts.html
-"Plugin 'c.vim'
-"Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-"Plugin 'rust-lang/rust.vim'
-"Plugin 'luochen1990/rainbow'
-
 " plugin from github
 Plugin 'https://github.com/vim-scripts/L9.git'
 Plugin 'https://github.com/tpope/vim-fugitive.git'
@@ -47,6 +41,7 @@ Plugin 'https://github.com/kaidiren/smartim.git'
 Plugin 'https://github.com/dietsche/vim-lastplace.git'
 
 let g:smartim_default = 'com.apple.keylayout.US'
+
 " 注释快捷键
 " leader cs 
 " leader cl
@@ -111,8 +106,6 @@ map <silent> <C-t> :NERDTreeToggle<CR>
 " autocmd VimEnter * NERDTree
 " wincmd w
 " autocmd VimEnter * wincmd w
-
-
 
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_eslint_exec = 'eslint'
