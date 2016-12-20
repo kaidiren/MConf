@@ -39,6 +39,7 @@ Plugin 'https://github.com/rust-lang/rust.vim.git'
 Plugin 'https://github.com/fatih/vim-go.git'
 Plugin 'https://github.com/kaidiren/smartim.git'
 Plugin 'https://github.com/dietsche/vim-lastplace.git'
+plugin 'https://github.com/tpope/vim-unimpaired.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
