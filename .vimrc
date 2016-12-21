@@ -193,3 +193,5 @@ let g:smartim_default = 'com.apple.keylayout.US'
 " leader cs 
 " leader cl
 " leader cu
+
+let g:gitgutter_max_signs = 1000
