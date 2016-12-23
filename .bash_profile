@@ -29,3 +29,4 @@ export GOPATH="/Users/rkd/./.gopath"
 if [ -f ~/.smartcd.sh ]; then
   source ~/.smartcd.sh
 fi
+export PATH="/usr/local/sbin:$PATH"
