@@ -37,7 +37,7 @@ Plugin 'https://github.com/EinfachToll/DidYouMean.git'
 Plugin 'https://github.com/wincent/terminus.git'
 Plugin 'https://github.com/rust-lang/rust.vim.git'
 Plugin 'https://github.com/fatih/vim-go.git'
-Plugin 'https://github.com/kaidiren/smartim.git'
+Plugin 'https://github.com/ybian/smartim.git'
 Plugin 'https://github.com/dietsche/vim-lastplace.git'
 
 " All of your Plugins must be added before the following line
