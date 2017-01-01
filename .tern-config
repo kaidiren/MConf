@@ -1,10 +1,6 @@
 {
-  "ecmaVersion": 8,
+  "ecmaVersion": 6,
   "libs": [
-    "node",
-    "async",
-    "bluebird",
-    "lodash"
   ],
   "async": true,
   "plugins": {
