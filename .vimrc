@@ -13,6 +13,8 @@ call vundle#begin()
 Plugin 'https://github.com/VundleVim/Vundle.vim.git'
 
 " plugin from github
+
+" 一直都在用
 Plugin 'https://github.com/vim-scripts/L9.git'
 Plugin 'https://github.com/tpope/vim-fugitive.git'
 Plugin 'https://github.com/Valloric/YouCompleteMe.git'
@@ -24,21 +26,23 @@ Plugin 'https://github.com/Yggdroot/indentLine.git'
 Plugin 'https://github.com/editorconfig/editorconfig-vim.git'
 Plugin 'https://github.com/millermedeiros/vim-esformatter.git'
 Plugin 'https://github.com/pangloss/vim-javascript.git'
-Plugin 'https://github.com/tpope/vim-surround.git'
 Plugin 'https://github.com/tpope/vim-repeat.git'
 Plugin 'https://github.com/airblade/vim-gitgutter.git'
 Plugin 'https://github.com/svermeulen/vim-easyclip.git'
-Plugin 'https://github.com/SirVer/ultisnips.git'
-Plugin 'https://github.com/honza/vim-snippets.git'
 Plugin 'https://github.com/scrooloose/nerdcommenter.git'
 Plugin 'https://github.com/elzr/vim-json.git'
 Plugin 'https://github.com/gioele/vim-autoswap.git'
 Plugin 'https://github.com/EinfachToll/DidYouMean.git'
 Plugin 'https://github.com/wincent/terminus.git'
-Plugin 'https://github.com/rust-lang/rust.vim.git'
-Plugin 'https://github.com/fatih/vim-go.git'
 Plugin 'https://github.com/ybian/smartim.git'
 Plugin 'https://github.com/dietsche/vim-lastplace.git'
+
+" 不经常用
+"Plugin 'https://github.com/tpope/vim-surround.git'
+"Plugin 'https://github.com/rust-lang/rust.vim.git'
+"Plugin 'https://github.com/fatih/vim-go.git'
+"Plugin 'https://github.com/SirVer/ultisnips.git'
+"Plugin 'https://github.com/honza/vim-snippets.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
