@@ -133,10 +133,11 @@ highlight link SyntasticStyleWarningSign SignColumn
 " YCM 配置
 let g:ycm_add_preview_to_completeopt = 0
 set completeopt-=preview
-let g:ycm_min_num_of_chars_for_completion = 2
+let g:ycm_min_num_of_chars_for_completion = 3
 let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_complete_in_comments = 1
 let g:ycm_seed_identifiers_with_syntax = 0
+let g:ycm_auto_trigger = 1
 
 set updatetime=5
 
