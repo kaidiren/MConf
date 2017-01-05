@@ -38,7 +38,7 @@ Plugin 'https://github.com/ybian/smartim.git'
 Plugin 'https://github.com/dietsche/vim-lastplace.git'
 
 " 不经常用
-"Plugin 'https://github.com/tpope/vim-surround.git'
+Plugin 'https://github.com/tpope/vim-surround.git'
 "Plugin 'https://github.com/rust-lang/rust.vim.git'
 "Plugin 'https://github.com/fatih/vim-go.git'
 "Plugin 'https://github.com/SirVer/ultisnips.git'
