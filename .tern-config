@@ -1,6 +1,7 @@
 {
   "ecmaVersion": 8,
   "libs": [
+    "ecmascript"
   ],
   "async": true,
   "plugins": {
