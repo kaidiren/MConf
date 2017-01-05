@@ -41,7 +41,7 @@ Plugin 'https://github.com/dietsche/vim-lastplace.git'
 Plugin 'https://github.com/tpope/vim-surround.git'
 Plugin 'https://github.com/rust-lang/rust.vim.git'
 Plugin 'https://github.com/fatih/vim-go.git'
-Plugin 'https://github.com/SirVer/ultisnips.git'
+"Plugin 'https://github.com/SirVer/ultisnips.git'
 "Plugin 'https://github.com/honza/vim-snippets.git'
 
 " All of your Plugins must be added before the following line
