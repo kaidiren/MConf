@@ -36,6 +36,7 @@ Plugin 'https://github.com/EinfachToll/DidYouMean.git'
 Plugin 'https://github.com/wincent/terminus.git'
 Plugin 'https://github.com/ybian/smartim.git'
 Plugin 'https://github.com/dietsche/vim-lastplace.git'
+Plugin 'https://github.com/ternjs/tern_for_vim.git'
 
 " 不经常用
 Plugin 'https://github.com/tpope/vim-surround.git'
