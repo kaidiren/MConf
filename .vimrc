@@ -17,7 +17,7 @@ Plugin 'https://github.com/VundleVim/Vundle.vim.git'
 " 一直都在用
 Plugin 'https://github.com/vim-scripts/L9.git'
 Plugin 'https://github.com/tpope/vim-fugitive.git'
-"Plugin 'https://github.com/Valloric/YouCompleteMe.git'
+Plugin 'https://github.com/Valloric/YouCompleteMe.git'
 Plugin 'https://github.com/scrooloose/syntastic.git'
 Plugin 'https://github.com/scrooloose/nerdtree.git'
 Plugin 'https://github.com/altercation/vim-colors-solarized.git'
