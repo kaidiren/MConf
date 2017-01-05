@@ -25,8 +25,7 @@ Plugin 'https://github.com/Lokaltog/vim-powerline.git'
 Plugin 'https://github.com/Yggdroot/indentLine.git'
 Plugin 'https://github.com/editorconfig/editorconfig-vim.git'
 Plugin 'https://github.com/millermedeiros/vim-esformatter.git'
-Plugin 'https://github.com/isRuslan/vim-es6.git'
-"Plugin 'https://github.com/pangloss/vim-javascript.git'
+Plugin 'https://github.com/pangloss/vim-javascript.git'
 Plugin 'https://github.com/tpope/vim-repeat.git'
 Plugin 'https://github.com/airblade/vim-gitgutter.git'
 Plugin 'https://github.com/svermeulen/vim-easyclip.git'
@@ -39,11 +38,11 @@ Plugin 'https://github.com/ybian/smartim.git'
 Plugin 'https://github.com/dietsche/vim-lastplace.git'
 
 " 不经常用
-"Plugin 'https://github.com/tpope/vim-surround.git'
-"Plugin 'https://github.com/rust-lang/rust.vim.git'
-"Plugin 'https://github.com/fatih/vim-go.git'
-"Plugin 'https://github.com/SirVer/ultisnips.git'
-"Plugin 'https://github.com/honza/vim-snippets.git'
+Plugin 'https://github.com/tpope/vim-surround.git'
+Plugin 'https://github.com/rust-lang/rust.vim.git'
+Plugin 'https://github.com/fatih/vim-go.git'
+Plugin 'https://github.com/SirVer/ultisnips.git'
+Plugin 'https://github.com/honza/vim-snippets.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
