@@ -5,6 +5,8 @@
 *.pyc
 *.pyo
 *.log
+.vim-bookmarks
+dump.rdb
 
 #dir
 node_modules

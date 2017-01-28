@@ -34,8 +34,8 @@ Plugin 'https://github.com/elzr/vim-json.git'
 Plugin 'https://github.com/gioele/vim-autoswap.git'
 Plugin 'https://github.com/EinfachToll/DidYouMean.git'
 Plugin 'https://github.com/wincent/terminus.git'
-Plugin 'https://github.com/ybian/smartim.git'
-Plugin 'https://github.com/dietsche/vim-lastplace.git'
+"Plugin 'https://github.com/ybian/smartim.git'
+"Plugin 'https://github.com/dietsche/vim-lastplace.git'
 
 " 不经常用
 Plugin 'https://github.com/tpope/vim-surround.git'
@@ -130,14 +130,15 @@ highlight link SyntasticWarningSign SignColumn
 highlight link SyntasticStyleErrorSign SignColumn
 highlight link SyntasticStyleWarningSign SignColumn
 
-" YCM 配置
-let g:ycm_add_preview_to_completeopt = 0
-set completeopt-=preview
-let g:ycm_min_num_of_chars_for_completion = 3
-let g:ycm_autoclose_preview_window_after_completion=1
-let g:ycm_complete_in_comments = 1
-let g:ycm_seed_identifiers_with_syntax = 1
-let g:ycm_auto_trigger = 1
+" " YCM 配置
+" let g:ycm_add_preview_to_completeopt = 0
+" set completeopt-=preview
+" let g:ycm_min_num_of_chars_for_completion = 3
+" let g:ycm_autoclose_preview_window_after_completion=1
+" let g:ycm_complete_in_comments = 1
+" let g:ycm_seed_identifiers_with_syntax = 1
+" let g:ycm_auto_trigger = 1
+"let g:ycm_global_ycm_extra_conf = '/Users/rkd/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 
 set updatetime=5
 
@@ -168,12 +169,11 @@ let g:vim_json_syntax_conceal = 0
 " crontab -e edit bug
 autocmd filetype crontab setlocal nobackup nowritebackup
 
-let g:ycm_global_ycm_extra_conf = '/Users/rkd/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 
-" UltiSnips triggering
-let g:UltiSnipsExpandTrigger = '<C-j>'
-let g:UltiSnipsJumpForwardTrigger = '<C-j>'
-let g:UltiSnipsJumpBackwardTrigger = '<C-k>'
+" " UltiSnips triggering
+" let g:UltiSnipsExpandTrigger = '<C-j>'
+" let g:UltiSnipsJumpForwardTrigger = '<C-j>'
+" let g:UltiSnipsJumpBackwardTrigger = '<C-k>'
 let g:TerminusInsertCursorShape = 0
 
 let g:rustfmt_autosave = 1
