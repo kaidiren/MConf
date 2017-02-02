@@ -13,6 +13,9 @@
       "jsx": true
     }
   },
+  "plugins": [
+    "react"
+  ],
   "rules": {
     "comma-dangle": [
       2,
