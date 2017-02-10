@@ -86,7 +86,7 @@
     ],
     "no-trailing-spaces": 2,
     "space-before-blocks": [
-      2,
+      1,
       "always"
     ],
     "space-before-function-paren": [
