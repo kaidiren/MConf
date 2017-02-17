@@ -41,7 +41,6 @@ Plugin 'https://github.com/dietsche/vim-lastplace.git'
 Plugin 'https://github.com/mileszs/ack.vim.git'
 Plugin 'https://github.com/MattesGroeger/vim-bookmarks.git'
 Plugin 'https://github.com/ntpeters/vim-better-whitespace.git'
-Plugin 'https://github.com/tomasr/molokai.git'
 
 let g:bookmark_no_default_key_mappings = 1
 let g:bookmark_save_per_working_dir = 1
@@ -61,8 +60,8 @@ let g:ctrlp_custom_ignore = {
   \ }
 
 " 不经常用
-"Plugin 'https://github.com/rust-lang/rust.vim.git'
-"Plugin 'https://github.com/fatih/vim-go.git'
+Plugin 'https://github.com/rust-lang/rust.vim.git'
+Plugin 'https://github.com/fatih/vim-go.git'
 "Plugin 'https://github.com/SirVer/ultisnips.git'
 "Plugin 'https://github.com/honza/vim-snippets.git'
 
