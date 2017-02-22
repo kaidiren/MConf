@@ -61,8 +61,8 @@ let g:ctrlp_custom_ignore = {
   \ }
 
 " 不经常用
-"Plugin 'https://github.com/rust-lang/rust.vim.git'
-"Plugin 'https://github.com/fatih/vim-go.git'
+Plugin 'https://github.com/rust-lang/rust.vim.git'
+Plugin 'https://github.com/fatih/vim-go.git'
 "Plugin 'https://github.com/SirVer/ultisnips.git'
 "Plugin 'https://github.com/honza/vim-snippets.git'
 
