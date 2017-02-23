@@ -162,7 +162,7 @@ let g:NERDSpaceDelims = 1
 let g:NERDDefaultAlign = 'left'
 let g:NERDCommentEmptyLines = 1
 let g:NERDTrimTrailingWhitespace = 1
-let g:NERDCustomDelimiters = { 'left': '//', 'leftAlt': '/**', 'rightAlt': '*/' }
+let g:NERDCustomDelimiters = { 'javascript': { 'left': '//', 'leftAlt': '/**', 'rightAlt': '*/' } }
 
 "打开powerline
 set laststatus=2
