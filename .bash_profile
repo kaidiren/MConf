@@ -40,6 +40,3 @@ export PATH="/usr/local/sbin:$PATH"
 
 
 alias love="/Applications/love.app/Contents/MacOS/love"
-
-
-export LUA_PATH="/usr/local/lib/luarocks/rocks-5.3"
