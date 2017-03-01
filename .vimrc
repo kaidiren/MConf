@@ -121,6 +121,7 @@ colorscheme solarized
 let g:airline_powerline_fonts = 1
 " let g:airline_theme='badwolf'
 let g:airline_theme='blue'
+let g:airline_section_error = '%{ALEGetStatusLine()}'
 let g:airline#extensions#default#layout = [
   \ [ 'a', 'b', 'error', 'warning', 'c'],
   \ [ 'z', 'x', 'y']
