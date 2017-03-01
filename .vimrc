@@ -130,6 +130,7 @@ let g:airline#extensions#default#layout = [
 map <silent> <C-t> :NERDTreeToggle<CR>
 
 let g:ale_set_quickfix = 1
+let g:ale_sign_column_always = 1
 let g:ale_open_list = 0
 let g:ale_lint_delay = 100
 let g:ale_echo_msg_error_str = 'E'
