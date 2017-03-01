@@ -62,8 +62,6 @@ let g:ctrlp_custom_ignore = {
 " 不经常用
 Plugin 'https://github.com/rust-lang/rust.vim.git'
 Plugin 'https://github.com/fatih/vim-go.git'
-"Plugin 'https://github.com/SirVer/ultisnips.git'
-"Plugin 'https://github.com/honza/vim-snippets.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -118,7 +116,6 @@ set background=dark
 colorscheme solarized
 
 let g:airline_powerline_fonts = 1
-" let g:airline_theme='badwolf'
 let g:airline_theme='blue'
 let g:airline#extensions#default#layout = [
   \ [ 'a', 'b', 'error', 'warning', 'c'],
@@ -134,7 +131,6 @@ let g:ale_open_list = 0
 let g:ale_lint_delay = 100
 let g:ale_echo_msg_error_str = 'E'
 let g:ale_echo_msg_warning_str = 'W'
-let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 let g:ale_sign_error = '❌'
 let g:ale_sign_warning = '⚠️'
 
