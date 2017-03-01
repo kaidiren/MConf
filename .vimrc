@@ -17,12 +17,12 @@ Plugin 'https://github.com/VundleVim/Vundle.vim.git'
 " 一直都在用
 Plugin 'https://github.com/vim-scripts/L9.git'
 Plugin 'https://github.com/tpope/vim-fugitive.git'
-"Plugin 'https://github.com/Valloric/YouCompleteMe.git'
+Plugin 'https://github.com/Valloric/YouCompleteMe.git'
 Plugin 'https://github.com/w0rp/ale.git'
 Plugin 'https://github.com/scrooloose/nerdtree.git'
 Plugin 'https://github.com/altercation/vim-colors-solarized.git'
-"Plugin 'https://github.com/vim-airline/vim-airline.git'
-"Plugin 'https://github.com/vim-airline/vim-airline-themes.git'
+Plugin 'https://github.com/vim-airline/vim-airline.git'
+Plugin 'https://github.com/vim-airline/vim-airline-themes.git'
 Plugin 'https://github.com/Yggdroot/indentLine.git'
 Plugin 'https://github.com/editorconfig/editorconfig-vim.git'
 Plugin 'https://github.com/millermedeiros/vim-esformatter.git'
@@ -121,23 +121,23 @@ colorscheme solarized
 let g:airline_powerline_fonts = 1
 " let g:airline_theme='badwolf'
 let g:airline_theme='blue'
-" let g:airline#extensions#default#layout = [
-"   \ [ 'a', 'b', 'error', 'warning', 'c'],
-"   \ [ 'z', 'x', 'y']
-"   \ ]
+let g:airline#extensions#default#layout = [
+  \ [ 'a', 'b', 'error', 'warning', 'c'],
+  \ [ 'z', 'x', 'y']
+  \ ]
 
 "NERDTree
 map <silent> <C-t> :NERDTreeToggle<CR>
 
-" let g:ale_set_quickfix = 1
-" let g:ale_sign_column_always = 1
-" let g:ale_open_list = 0
-" let g:ale_lint_delay = 100
-" let g:ale_echo_msg_error_str = 'E'
-" let g:ale_echo_msg_warning_str = 'W'
-" let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
-" let g:ale_sign_error = '❌'
-" let g:ale_sign_warning = '⚠️'
+let g:ale_set_quickfix = 0
+let g:ale_sign_column_always = 1
+let g:ale_open_list = 1
+let g:ale_lint_delay = 100
+let g:ale_echo_msg_error_str = 'E'
+let g:ale_echo_msg_warning_str = 'W'
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+let g:ale_sign_error = '❌'
+let g:ale_sign_warning = '⚠️'
 
 " YCM 配置
 let g:ycm_add_preview_to_completeopt = 0
