@@ -121,10 +121,10 @@ colorscheme solarized
 let g:airline_powerline_fonts = 1
 " let g:airline_theme='badwolf'
 let g:airline_theme='blue'
-let g:airline#extensions#default#layout = [
-  \ [ 'a', 'b', 'error', 'warning', 'c'],
-  \ [ 'z', 'x', 'y']
-  \ ]
+" let g:airline#extensions#default#layout = [
+"   \ [ 'a', 'b', 'error', 'warning', 'c'],
+"   \ [ 'z', 'x', 'y']
+"   \ ]
 
 "NERDTree
 map <silent> <C-t> :NERDTreeToggle<CR>
