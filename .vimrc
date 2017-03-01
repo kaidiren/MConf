@@ -125,6 +125,9 @@ let g:airline#extensions#default#layout = [
 "NERDTree
 map <silent> <C-t> :NERDTreeToggle<CR>
 
+let g:ale_linters = {
+\   'javascript': ['eslint'],
+\}
 let g:ale_set_quickfix = 1
 let g:ale_sign_column_always = 1
 let g:ale_open_list = 0
