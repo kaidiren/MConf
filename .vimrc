@@ -138,6 +138,10 @@ let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 let g:ale_sign_error = '❌'
 let g:ale_sign_warning = '⚠️'
 
+set statusline+=%#warningmsg#
+set statusline+=%{ALEGetStatusLine()}
+set statusline+=%*
+
 " YCM 配置
 let g:ycm_add_preview_to_completeopt = 0
 set completeopt-=preview
