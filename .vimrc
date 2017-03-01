@@ -125,15 +125,13 @@ let g:airline#extensions#default#layout = [
 "NERDTree
 map <silent> <C-t> :NERDTreeToggle<CR>
 
-let g:ale_linters = {
-\   'javascript': ['eslint'],
-\}
 let g:ale_set_quickfix = 1
 let g:ale_sign_column_always = 1
 let g:ale_open_list = 0
 let g:ale_lint_delay = 100
 let g:ale_echo_msg_error_str = 'E'
 let g:ale_echo_msg_warning_str = 'W'
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 let g:ale_sign_error = '❌'
 let g:ale_sign_warning = '⚠️'
 
