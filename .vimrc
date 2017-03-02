@@ -147,22 +147,22 @@ let g:ycm_key_invoke_completion = '<C-x>'
 let g:ycm_echo_current_diagnostic = 1
 let g:ycm_seed_identifiers_with_syntax = 1
 
-"set updatetime=5
+set updatetime=5
 
-" let g:gitgutter_sign_added = '++'
-" let g:gitgutter_sign_modified = '**'
-" let g:gitgutter_sign_removed = '--'
-" let g:gitgutter_sign_modified_removed = '-*'
-" let g:gitgutter_sign_removed_first_line = '-'
+let g:gitgutter_sign_added = '++'
+let g:gitgutter_sign_modified = '**'
+let g:gitgutter_sign_removed = '--'
+let g:gitgutter_sign_modified_removed = '-*'
+let g:gitgutter_sign_removed_first_line = '-'
 
-" let g:EasyClipAlwaysMoveCursorToEndOfPaste = 1
-" let g:EasyClipPreserveCursorPositionAfterYank = 1
-"
-" let g:NERDSpaceDelims = 1
-" let g:NERDDefaultAlign = 'left'
-" let g:NERDCommentEmptyLines = 1
-" let g:NERDTrimTrailingWhitespace = 1
-" let g:NERDCustomDelimiters = { 'javascript': { 'left': '//', 'leftAlt': '/**', 'rightAlt': '*/' } }
+let g:EasyClipAlwaysMoveCursorToEndOfPaste = 1
+let g:EasyClipPreserveCursorPositionAfterYank = 1
+
+let g:NERDSpaceDelims = 1
+let g:NERDDefaultAlign = 'left'
+let g:NERDCommentEmptyLines = 1
+let g:NERDTrimTrailingWhitespace = 1
+let g:NERDCustomDelimiters = { 'javascript': { 'left': '//', 'leftAlt': '/**', 'rightAlt': '*/' } }
 
 "打开powerline
 set laststatus=2
