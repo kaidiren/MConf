@@ -136,33 +136,33 @@ let g:ale_sign_error = '❌'
 let g:ale_sign_warning = '⚠️'
 
 " YCM 配置
-" let g:ycm_add_preview_to_completeopt = 0
-" set completeopt-=preview
-" let g:ycm_min_num_of_chars_for_completion = 2
-" let g:ycm_autoclose_preview_window_after_completion=1
-" let g:ycm_complete_in_comments = 1
-" let g:ycm_seed_identifiers_with_syntax = 1
-" let g:ycm_auto_trigger = 1
-" let g:ycm_key_invoke_completion = '<C-x>'
-" let g:ycm_echo_current_diagnostic = 1
-" let g:ycm_seed_identifiers_with_syntax = 1
+let g:ycm_add_preview_to_completeopt = 0
+set completeopt-=preview
+let g:ycm_min_num_of_chars_for_completion = 2
+let g:ycm_autoclose_preview_window_after_completion=1
+let g:ycm_complete_in_comments = 1
+let g:ycm_seed_identifiers_with_syntax = 1
+let g:ycm_auto_trigger = 1
+let g:ycm_key_invoke_completion = '<C-x>'
+let g:ycm_echo_current_diagnostic = 1
+let g:ycm_seed_identifiers_with_syntax = 1
 
 set updatetime=5
 
-let g:gitgutter_sign_added = '++'
-let g:gitgutter_sign_modified = '**'
-let g:gitgutter_sign_removed = '--'
-let g:gitgutter_sign_modified_removed = '-*'
-let g:gitgutter_sign_removed_first_line = '-'
+" let g:gitgutter_sign_added = '++'
+" let g:gitgutter_sign_modified = '**'
+" let g:gitgutter_sign_removed = '--'
+" let g:gitgutter_sign_modified_removed = '-*'
+" let g:gitgutter_sign_removed_first_line = '-'
 
-let g:EasyClipAlwaysMoveCursorToEndOfPaste = 1
-let g:EasyClipPreserveCursorPositionAfterYank = 1
-
-let g:NERDSpaceDelims = 1
-let g:NERDDefaultAlign = 'left'
-let g:NERDCommentEmptyLines = 1
-let g:NERDTrimTrailingWhitespace = 1
-let g:NERDCustomDelimiters = { 'javascript': { 'left': '//', 'leftAlt': '/**', 'rightAlt': '*/' } }
+" let g:EasyClipAlwaysMoveCursorToEndOfPaste = 1
+" let g:EasyClipPreserveCursorPositionAfterYank = 1
+"
+" let g:NERDSpaceDelims = 1
+" let g:NERDDefaultAlign = 'left'
+" let g:NERDCommentEmptyLines = 1
+" let g:NERDTrimTrailingWhitespace = 1
+" let g:NERDCustomDelimiters = { 'javascript': { 'left': '//', 'leftAlt': '/**', 'rightAlt': '*/' } }
 
 "打开powerline
 set laststatus=2
