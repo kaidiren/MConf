@@ -128,6 +128,7 @@ let g:airline#extensions#default#layout = [
 " trailing: trailing whitespace
 " mixed-indent-file: different indentation in different lines
 
+let g:airline#extensions#whitespace#enabled = 1
 let g:airline#extensions#whitespace#checks = [ 'indent', 'trailing', 'long', 'mixed-indent-file' ]
 
 "NERDTree
