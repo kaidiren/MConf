@@ -20,7 +20,7 @@ Plugin 'https://github.com/VundleVim/Vundle.vim.git'
 " Plugin 'https://github.com/Valloric/YouCompleteMe.git'
  Plugin 'https://github.com/w0rp/ale.git'
 " Plugin 'https://github.com/scrooloose/nerdtree.git'
-" Plugin 'https://github.com/altercation/vim-colors-solarized.git'
+ Plugin 'https://github.com/altercation/vim-colors-solarized.git'
 " Plugin 'https://github.com/vim-airline/vim-airline.git'
 " Plugin 'https://github.com/vim-airline/vim-airline-themes.git'
 " Plugin 'https://github.com/Yggdroot/indentLine.git'
@@ -42,26 +42,6 @@ Plugin 'https://github.com/VundleVim/Vundle.vim.git'
 " Plugin 'https://github.com/MattesGroeger/vim-bookmarks.git'
 " Plugin 'https://github.com/ntpeters/vim-better-whitespace.git'
 
-let g:bookmark_no_default_key_mappings = 1
-let g:bookmark_save_per_working_dir = 1
-let g:bookmark_auto_save = 1
-nmap <silent> ma :BookmarkToggle<CR>
-nmap <silent> me :BookmarkAnnotate<CR>
-nmap <silent> ml :BookmarkShowAll<CR>
-nmap <silent> mn :BookmarkNext<CR>
-nmap <silent> mb :BookmarkPrev<CR>
-nmap <silent> mc :BookmarkClearAll<CR>
-
-let g:TerminusInsertCursorShape = 0
-let g:ctrlp_working_path_mode = 'ra'
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](node_modules|target)|(\.(git|svn|hg))$',
-  \ 'file': '\v\.(exe|so|dll|swp)$'
-  \ }
-
-" 不经常用
-Plugin 'https://github.com/rust-lang/rust.vim.git'
-Plugin 'https://github.com/fatih/vim-go.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -115,93 +95,12 @@ syntax enable
 set background=dark
 colorscheme solarized
 
-let g:airline_powerline_fonts = 1
-let g:airline_theme='blue'
-let g:airline#extensions#default#layout = [
-  \ [ 'a', 'b', 'error', 'warning', 'c'],
-  \ [ 'z', 'x', 'y']
-  \ ]
-
-"NERDTree
-map <silent> <C-t> :NERDTreeToggle<CR>
-
-let g:ale_set_quickfix = 1
-let g:ale_sign_column_always = 1
-let g:ale_open_list = 0
-let g:ale_lint_delay = 100
-let g:ale_echo_msg_error_str = 'E'
-let g:ale_echo_msg_warning_str = 'W'
-let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
-let g:ale_sign_error = '❌'
-let g:ale_sign_warning = '⚠️'
-
-" YCM 配置
-let g:ycm_add_preview_to_completeopt = 0
-set completeopt-=preview
-let g:ycm_min_num_of_chars_for_completion = 2
-let g:ycm_autoclose_preview_window_after_completion=1
-let g:ycm_complete_in_comments = 1
-let g:ycm_seed_identifiers_with_syntax = 1
-let g:ycm_auto_trigger = 1
-let g:ycm_key_invoke_completion = '<C-x>'
-let g:ycm_echo_current_diagnostic = 1
-let g:ycm_seed_identifiers_with_syntax = 1
-
-set updatetime=5
-
-let g:gitgutter_sign_added = '++'
-let g:gitgutter_sign_modified = '**'
-let g:gitgutter_sign_removed = '--'
-let g:gitgutter_sign_modified_removed = '-*'
-let g:gitgutter_sign_removed_first_line = '-'
-
-let g:EasyClipAlwaysMoveCursorToEndOfPaste = 1
-let g:EasyClipPreserveCursorPositionAfterYank = 1
-
-let g:NERDSpaceDelims = 1
-let g:NERDDefaultAlign = 'left'
-let g:NERDCommentEmptyLines = 1
-let g:NERDTrimTrailingWhitespace = 1
-let g:NERDCustomDelimiters = { 'javascript': { 'left': '//', 'leftAlt': '/**', 'rightAlt': '*/' } }
-
-"打开powerline
-set laststatus=2
-
-" 快捷键映射
-let mapleader = " "
-set timeoutlen=500
-" leader 的默认值为 \
-
-let g:vim_json_syntax_conceal = 0
-
-" crontab -e edit bug
-autocmd filetype crontab setlocal nobackup nowritebackup
-
-let g:ycm_global_ycm_extra_conf = '/Users/rkd/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
-
-let g:rustfmt_autosave = 1
-
-" 利用Tab键和Shift-Tab键来缩进文本
-" V 选中整行 > 向右缩进 < 向左缩进
-nmap <tab> V>
-nmap <s-tab> V<
-vmap <tab> >gv
-vmap <s-tab> <gv
-
-" 取消搜索高亮
-nnoremap <silent> <leader><Esc> :<C-u>nohlsearch<CR>
-
-" 复制光标所在的单词
-nnoremap <silent> <leader>y viwy
-vnoremap <silent> <leader>y iwy
-
-
-" 注释快捷键
-" leader cs
-" leader cl
-" leader cu
-
-let g:gitgutter_max_signs = 10000
-let g:javascript_plugin_jsdoc = 1
-
-let g:smartim_default = 'com.apple.keylayout.US'
+" let g:ale_set_quickfix = 1
+" let g:ale_sign_column_always = 1
+" let g:ale_open_list = 0
+" let g:ale_lint_delay = 100
+" let g:ale_echo_msg_error_str = 'E'
+" let g:ale_echo_msg_warning_str = 'W'
+" let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+" let g:ale_sign_error = '❌'
+" let g:ale_sign_warning = '⚠️'
