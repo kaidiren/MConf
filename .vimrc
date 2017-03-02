@@ -122,6 +122,14 @@ let g:airline#extensions#default#layout = [
   \ [ 'z', 'x', 'y']
   \ ]
 
+" configure which whitespace checks to enable. >
+" indent: mixed indent within a line
+" long:   overlong lines
+" trailing: trailing whitespace
+" mixed-indent-file: different indentation in different lines
+
+let g:airline#extensions#whitespace#checks = [ 'indent', 'trailing', 'long', 'mixed-indent-file' ]
+
 "NERDTree
 map <silent> <C-t> :NERDTreeToggle<CR>
 
