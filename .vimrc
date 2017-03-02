@@ -94,6 +94,7 @@ set clipboard=unnamed
 syntax enable
 set background=dark
 colorscheme solarized
+set laststatus=2
 
 let g:ale_set_quickfix = 1
 let g:ale_sign_column_always = 1
