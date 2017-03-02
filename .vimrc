@@ -1,4 +1,3 @@
-" vim +PluginInstall +qall
 set nocompatible              " be iMproved, required
 
 filetype off                  " required
@@ -129,7 +128,7 @@ let g:airline#extensions#default#layout = [
 " mixed-indent-file: different indentation in different lines
 
 let g:airline#extensions#whitespace#enabled = 0
-let g:airline#extensions#whitespace#checks = [ 'indent', 'trailing']
+let g:airline#extensions#whitespace#checks = [ 'indent', 'trailing', 'long', 'mixed-indent-file' ]
 
 "NERDTree
 map <silent> <C-t> :NERDTreeToggle<CR>
