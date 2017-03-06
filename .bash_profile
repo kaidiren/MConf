@@ -11,6 +11,7 @@ alias emacs='emacs -nw'
 alias e='emacs -nw'
 alias vi='vim'
 alias node='node --harmony'
+alias openmd='open -a Typora.app'
 
 source ~/.nvm/nvm.sh
 
