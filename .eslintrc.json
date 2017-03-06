@@ -91,7 +91,7 @@
     ],
     "space-before-function-paren": [
       2,
-      "never"
+      "always"
     ],
     "space-in-parens": [
       2,
