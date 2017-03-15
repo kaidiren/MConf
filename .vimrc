@@ -54,7 +54,7 @@ nmap <silent> mc :BookmarkClearAll<CR>
 let g:TerminusInsertCursorShape = 0
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](node_modules|target)|(\.(git|svn|hg))$',
+  \ 'dir':  '\v[\/](node_modules|coverage)|(\.(git|svn|hg))$',
   \ 'file': '\v\.(exe|so|dll|swp)$'
   \ }
 
