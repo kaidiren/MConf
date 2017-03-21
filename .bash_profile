@@ -38,6 +38,4 @@ if [ -f ~/.smartcd.sh ]; then
   source ~/.smartcd.sh
 fi
 export PATH="/usr/local/sbin:$PATH"
-
-
-alias love="/Applications/love.app/Contents/MacOS/love"
+export PATH="$HOME/Library/Haskell/bin:$PATH"
