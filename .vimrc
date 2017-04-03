@@ -42,6 +42,8 @@ Plugin 'https://github.com/MattesGroeger/vim-bookmarks.git'
 Plugin 'https://github.com/ntpeters/vim-better-whitespace.git'
 Plugin 'https://github.com/rhysd/vim-clang-format.git'
 Plugin 'https://github.com/vim-scripts/LargeFile.git'
+Plugin 'https://github.com/tpope/vim-surround.git'
+
 let g:bookmark_no_default_key_mappings = 1
 let g:bookmark_save_per_working_dir = 1
 let g:bookmark_auto_save = 1
