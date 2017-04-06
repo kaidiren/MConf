@@ -216,3 +216,12 @@ let g:gitgutter_max_signs = 10000
 let g:javascript_plugin_jsdoc = 1
 
 let g:smartim_default = 'com.apple.keylayout.US'
+
+noremap <Up> <nop>
+noremap <Down> <nop>
+noremap <Left> <nop>
+noremap <Right> <nop>
+inoremap <Up> <nop>
+inoremap <Down> <nop>
+inoremap <Left> <nop>
+inoremap <Right> <nop>
