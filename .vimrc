@@ -217,3 +217,5 @@ let g:gitgutter_max_signs = 10000
 let g:javascript_plugin_jsdoc = 1
 
 let g:smartim_default = 'com.apple.keylayout.US'
+
+let g:jsdoc_enable_es6 = 1
