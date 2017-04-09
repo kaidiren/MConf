@@ -205,6 +205,8 @@ nnoremap <silent> <leader><Esc> :<C-u>nohlsearch<CR>
 
 " 退出
 nnoremap <leader>q :q<CR>
+
+"保存
 nnoremap <leader>w :w<CR>
 
 " 复制光标所在的单词
