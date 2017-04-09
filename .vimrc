@@ -218,6 +218,11 @@ vnoremap <silent> <leader>y iwy
 " leader cs
 " leader cl
 " leader cu
+" vim-surround cheat
+" ds"
+" cs'"
+" ysiw( 单词
+" yss( 行
 
 let g:gitgutter_max_signs = 10000
 let g:javascript_plugin_jsdoc = 1
