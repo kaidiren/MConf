@@ -202,9 +202,10 @@ vmap <s-tab> <gv
 
 " 取消搜索高亮
 nnoremap <silent> <leader><Esc> :<C-u>nohlsearch<CR>
+
 " 退出
-nnoremap <silent> <leader>q :q<CR>
-nnoremap <silent> <leader>qq :q!<CR>
+nnoremap <leader>q :q<CR>
+nnoremap <leader>w :w<CR>
 
 " 复制光标所在的单词
 nnoremap <silent> <leader>y viwy
