@@ -10,18 +10,13 @@ alias awk='gawk'
 alias emacs='emacs -nw'
 alias e='emacs -nw'
 alias vi='vim'
-alias node='node --harmony'
+alias v='vim'
 alias openmd='open -a Typora.app'
 
 source ~/.nvm/nvm.sh
 
 export PS1='\h@mac:\w\$ '
 
-#export PS1='$(printf "%*s\r%s" $(( COLUMNS-1 )) "$(git branch 2>/dev/null | grep '^*' | sed s/..//)" "\e[0mrkd@mac:\w$")'
-#export GITAWAREPROMPT=~/.bash/git-aware-prompt
-#source "${GITAWAREPROMPT}/main.sh"
-#export PS1="\h@mac:\w\$git_branch\$git_dirty\[$txtrst\]\$ "
-#export PS1="\h@mac:\w\[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "
 
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
