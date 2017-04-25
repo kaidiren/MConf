@@ -1,37 +1,24 @@
-set nocompatible              " be iMproved, required
-
-filetype off                  " required
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-Plugin 'https://github.com/VundleVim/Vundle.vim.git'
-
-" plugin from github
+call plug#begin('~/.vim/plugged')
 
 " 一直都在用
 Plugin 'https://github.com/vim-scripts/L9.git'
 Plugin 'https://github.com/tpope/vim-fugitive.git'
 Plugin 'https://github.com/Valloric/YouCompleteMe.git'
 Plugin 'https://github.com/w0rp/ale.git'
-Plugin 'https://github.com/scrooloose/nerdtree.git'
+Plugin 'https://github.com/scrooloose/nerdtree.git', { 'on': 'NERDTreeToggle' }
 Plugin 'https://github.com/altercation/vim-colors-solarized.git'
 Plugin 'https://github.com/vim-airline/vim-airline.git'
 Plugin 'https://github.com/vim-airline/vim-airline-themes.git'
 Plugin 'https://github.com/Yggdroot/indentLine.git'
 Plugin 'https://github.com/editorconfig/editorconfig-vim.git'
 Plugin 'https://github.com/millermedeiros/vim-esformatter.git'
-Plugin 'https://github.com/pangloss/vim-javascript.git'
+Plugin 'https://github.com/pangloss/vim-javascript.git', { 'for': 'javascript' }
 Plugin 'https://github.com/tpope/vim-repeat.git'
 Plugin 'https://github.com/ctrlpvim/ctrlp.vim.git'
 Plugin 'https://github.com/airblade/vim-gitgutter.git'
 Plugin 'https://github.com/svermeulen/vim-easyclip.git'
 Plugin 'https://github.com/scrooloose/nerdcommenter.git'
-Plugin 'https://github.com/elzr/vim-json.git'
+Plugin 'https://github.com/elzr/vim-json.git', { 'for': 'json' }
 Plugin 'https://github.com/gioele/vim-autoswap.git'
 Plugin 'https://github.com/EinfachToll/DidYouMean.git'
 Plugin 'https://github.com/wincent/terminus.git'
@@ -40,10 +27,14 @@ Plugin 'https://github.com/dietsche/vim-lastplace.git'
 Plugin 'https://github.com/mileszs/ack.vim.git'
 Plugin 'https://github.com/MattesGroeger/vim-bookmarks.git'
 Plugin 'https://github.com/ntpeters/vim-better-whitespace.git'
-Plugin 'https://github.com/rhysd/vim-clang-format.git'
+Plugin 'https://github.com/rhysd/vim-clang-format.git', { 'for': 'c' }
 Plugin 'https://github.com/vim-scripts/LargeFile.git'
 Plugin 'https://github.com/tpope/vim-surround.git'
-Plugin 'https://github.com/heavenshell/vim-jsdoc.git'
+Plugin 'https://github.com/heavenshell/vim-jsdoc.git', { 'for': 'javascript' }
+Plugin 'https://github.com/rust-lang/rust.vim.git', { 'for': 'rust' }
+Plugin 'https://github.com/fatih/vim-go.git' , { 'for': 'go' }
+
+call plug#end()
 
 let g:bookmark_no_default_key_mappings = 1
 let g:bookmark_save_per_working_dir = 1
@@ -62,13 +53,7 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\v\.(exe|so|dll|swp)$'
   \ }
 
-" 不经常用
-Plugin 'https://github.com/rust-lang/rust.vim.git'
-Plugin 'https://github.com/fatih/vim-go.git'
-
 " All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
