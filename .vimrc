@@ -1,6 +1,5 @@
 call plug#begin('~/.vim/plugged')
 
-" 一直都在用
 Plug 'https://github.com/vim-scripts/L9.git'
 Plug 'https://github.com/tpope/vim-fugitive.git'
 Plug 'https://github.com/Valloric/YouCompleteMe.git'
@@ -14,7 +13,7 @@ Plug 'https://github.com/editorconfig/editorconfig-vim.git'
 Plug 'https://github.com/millermedeiros/vim-esformatter.git'
 Plug 'https://github.com/pangloss/vim-javascript.git', { 'for': 'javascript' }
 Plug 'https://github.com/tpope/vim-repeat.git'
-Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
+Plug 'https://github.com/ctrlpvim/ctrlp.vim.git', { 'on': 'CtrlP' }
 Plug 'https://github.com/airblade/vim-gitgutter.git'
 Plug 'https://github.com/svermeulen/vim-easyclip.git'
 Plug 'https://github.com/scrooloose/nerdcommenter.git'
