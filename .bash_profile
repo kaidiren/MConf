@@ -34,3 +34,4 @@ if [ -f ~/.smartcd.sh ]; then
 fi
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$HOME/Library/Haskell/bin:$PATH"
+export TERM=xterm-256color
