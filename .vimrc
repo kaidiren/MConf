@@ -1,38 +1,38 @@
 call plug#begin('~/.vim/plugged')
 
 " 一直都在用
-Plugin 'https://github.com/vim-scripts/L9.git'
-Plugin 'https://github.com/tpope/vim-fugitive.git'
-Plugin 'https://github.com/Valloric/YouCompleteMe.git'
-Plugin 'https://github.com/w0rp/ale.git'
-Plugin 'https://github.com/scrooloose/nerdtree.git', { 'on': 'NERDTreeToggle' }
-Plugin 'https://github.com/altercation/vim-colors-solarized.git'
-Plugin 'https://github.com/vim-airline/vim-airline.git'
-Plugin 'https://github.com/vim-airline/vim-airline-themes.git'
-Plugin 'https://github.com/Yggdroot/indentLine.git'
-Plugin 'https://github.com/editorconfig/editorconfig-vim.git'
-Plugin 'https://github.com/millermedeiros/vim-esformatter.git'
-Plugin 'https://github.com/pangloss/vim-javascript.git', { 'for': 'javascript' }
-Plugin 'https://github.com/tpope/vim-repeat.git'
-Plugin 'https://github.com/ctrlpvim/ctrlp.vim.git'
-Plugin 'https://github.com/airblade/vim-gitgutter.git'
-Plugin 'https://github.com/svermeulen/vim-easyclip.git'
-Plugin 'https://github.com/scrooloose/nerdcommenter.git'
-Plugin 'https://github.com/elzr/vim-json.git', { 'for': 'json' }
-Plugin 'https://github.com/gioele/vim-autoswap.git'
-Plugin 'https://github.com/EinfachToll/DidYouMean.git'
-Plugin 'https://github.com/wincent/terminus.git'
-Plugin 'https://github.com/ybian/smartim.git'
-Plugin 'https://github.com/dietsche/vim-lastplace.git'
-Plugin 'https://github.com/mileszs/ack.vim.git'
-Plugin 'https://github.com/MattesGroeger/vim-bookmarks.git'
-Plugin 'https://github.com/ntpeters/vim-better-whitespace.git'
-Plugin 'https://github.com/rhysd/vim-clang-format.git', { 'for': 'c' }
-Plugin 'https://github.com/vim-scripts/LargeFile.git'
-Plugin 'https://github.com/tpope/vim-surround.git'
-Plugin 'https://github.com/heavenshell/vim-jsdoc.git', { 'for': 'javascript' }
-Plugin 'https://github.com/rust-lang/rust.vim.git', { 'for': 'rust' }
-Plugin 'https://github.com/fatih/vim-go.git' , { 'for': 'go' }
+Plug 'https://github.com/vim-scripts/L9.git'
+Plug 'https://github.com/tpope/vim-fugitive.git'
+Plug 'https://github.com/Valloric/YouCompleteMe.git'
+Plug 'https://github.com/w0rp/ale.git'
+Plug 'https://github.com/scrooloose/nerdtree.git', { 'on': 'NERDTreeToggle' }
+Plug 'https://github.com/altercation/vim-colors-solarized.git'
+Plug 'https://github.com/vim-airline/vim-airline.git'
+Plug 'https://github.com/vim-airline/vim-airline-themes.git'
+Plug 'https://github.com/Yggdroot/indentLine.git'
+Plug 'https://github.com/editorconfig/editorconfig-vim.git'
+Plug 'https://github.com/millermedeiros/vim-esformatter.git'
+Plug 'https://github.com/pangloss/vim-javascript.git', { 'for': 'javascript' }
+Plug 'https://github.com/tpope/vim-repeat.git'
+Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
+Plug 'https://github.com/airblade/vim-gitgutter.git'
+Plug 'https://github.com/svermeulen/vim-easyclip.git'
+Plug 'https://github.com/scrooloose/nerdcommenter.git'
+Plug 'https://github.com/elzr/vim-json.git', { 'for': 'json' }
+Plug 'https://github.com/gioele/vim-autoswap.git'
+Plug 'https://github.com/EinfachToll/DidYouMean.git'
+Plug 'https://github.com/wincent/terminus.git'
+Plug 'https://github.com/ybian/smartim.git'
+Plug 'https://github.com/dietsche/vim-lastplace.git'
+Plug 'https://github.com/mileszs/ack.vim.git'
+Plug 'https://github.com/MattesGroeger/vim-bookmarks.git'
+Plug 'https://github.com/ntpeters/vim-better-whitespace.git'
+Plug 'https://github.com/rhysd/vim-clang-format.git', { 'for': 'c' }
+Plug 'https://github.com/vim-scripts/LargeFile.git'
+Plug 'https://github.com/tpope/vim-surround.git'
+Plug 'https://github.com/heavenshell/vim-jsdoc.git', { 'for': 'javascript' }
+Plug 'https://github.com/rust-lang/rust.vim.git', { 'for': 'rust' }
+Plug 'https://github.com/fatih/vim-go.git' , { 'for': 'go' }
 
 call plug#end()
 
