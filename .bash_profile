@@ -9,7 +9,8 @@ alias la='ls -Ga'
 alias awk='gawk'
 alias emacs='emacs -nw'
 alias e='emacs -nw'
-alias vi='vim'
+alias vi='nvim'
+alias vim='nvim'
 alias v='vim'
 alias openmd='open -a Typora.app'
 
@@ -34,4 +35,4 @@ if [ -f ~/.smartcd.sh ]; then
 fi
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$HOME/Library/Haskell/bin:$PATH"
-export TERM=xterm-256color
+#export TERM=xterm-256color
