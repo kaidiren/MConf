@@ -9,8 +9,8 @@ alias la='ls -Ga'
 alias awk='gawk'
 alias emacs='emacs -nw'
 alias e='emacs -nw'
-alias vi='nvim'
-alias v='nvim'
+alias vi='vim'
+alias v='vim'
 alias openmd='open -a Typora.app'
 
 source ~/.nvm/nvm.sh
