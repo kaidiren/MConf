@@ -11,6 +11,7 @@ alias emacs='emacs -nw'
 alias e='emacs -nw'
 alias vi='nvim'
 alias vim='vim'
+alias f='fuck'
 alias openmd='open -a Typora.app'
 
 source ~/.nvm/nvm.sh
@@ -36,3 +37,4 @@ fi
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$HOME/Library/Haskell/bin:$PATH"
 export TERM=xterm-256color
+eval "$(thefuck --alias)"
