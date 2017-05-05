@@ -13,8 +13,7 @@ alias vi='nvim'
 alias vim='vim'
 alias f='fuck'
 alias openmd='open -a Typora.app'
-alias t='tmux'
-alias tu='tmux'
+alias ta='tmux attach'
 
 source ~/.nvm/nvm.sh
 
