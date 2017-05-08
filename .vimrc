@@ -10,7 +10,7 @@ Plug 'https://github.com/vim-airline/vim-airline.git'
 Plug 'https://github.com/vim-airline/vim-airline-themes.git'
 Plug 'https://github.com/Yggdroot/indentLine.git'
 Plug 'https://github.com/editorconfig/editorconfig-vim.git'
-Plug 'https://github.com/millermedeiros/vim-esformatter.git'
+Plug 'https://github.com/millermedeiros/vim-esformatter.git', { 'for': ['javascript', 'json'] }
 Plug 'https://github.com/pangloss/vim-javascript.git', { 'for': 'javascript' }
 Plug 'https://github.com/tpope/vim-repeat.git'
 Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
@@ -21,49 +21,40 @@ Plug 'https://github.com/elzr/vim-json.git', { 'for': 'json' }
 Plug 'https://github.com/gioele/vim-autoswap.git'
 Plug 'https://github.com/EinfachToll/DidYouMean.git'
 Plug 'https://github.com/wincent/terminus.git'
-Plug 'https://github.com/ybian/smartim.git'
+Plug 'https://github.com/kaidiren/smartim.git'
 Plug 'https://github.com/dietsche/vim-lastplace.git'
 Plug 'https://github.com/mileszs/ack.vim.git'
 Plug 'https://github.com/MattesGroeger/vim-bookmarks.git'
 Plug 'https://github.com/ntpeters/vim-better-whitespace.git'
-Plug 'https://github.com/rhysd/vim-clang-format.git', { 'for': 'c' }
+Plug 'https://github.com/rhysd/vim-clang-format.git', { 'for': ['c', 'cpp'] }
 Plug 'https://github.com/vim-scripts/LargeFile.git'
 Plug 'https://github.com/tpope/vim-surround.git'
 Plug 'https://github.com/heavenshell/vim-jsdoc.git', { 'for': 'javascript' }
 Plug 'https://github.com/rust-lang/rust.vim.git', { 'for': 'rust' }
 Plug 'https://github.com/fatih/vim-go.git' , { 'for': 'go' }
+Plug 'https://github.com/christoomey/vim-tmux-navigator.git'
 
 call plug#end()
+
+let g:LargeFile= 1
 
 let g:bookmark_no_default_key_mappings = 1
 let g:bookmark_save_per_working_dir = 1
 let g:bookmark_auto_save = 1
 nmap <silent> ma :BookmarkToggle<CR>
-nmap <silent> me :BookmarkAnnotate<CR>
 nmap <silent> ml :BookmarkShowAll<CR>
 nmap <silent> mn :BookmarkNext<CR>
 nmap <silent> mb :BookmarkPrev<CR>
 nmap <silent> mc :BookmarkClearAll<CR>
 
 let g:TerminusInsertCursorShape = 0
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](node_modules|coverage)|(\.(git|svn|hg))$',
+  \ 'dir':  '\v[\/](node_modules|coverage|tmp)|(\.(git|svn|hg))$',
   \ 'file': '\v\.(exe|so|dll|swp)$'
   \ }
-
-" All of your Plugins must be added before the following line
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList          - list configured plugins
-" :PluginInstall(!)    - install (update) plugins
-" :PluginSearch(!) foo - search (or refresh cache first) for foo
-" :PluginClean(!)      - confirm (or auto-approve) removal of unused plugins
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
 
 " 通用配置
 set tabstop=2
@@ -73,31 +64,32 @@ set expandtab
 set textwidth=120
 set backspace=2
 set hlsearch
-"默认编码
+" 默认编码
 set encoding=utf-8
-
-"行号
+" 禁用光标样式
+set guicursor=
+" 行号
 set nu
 
-"开启折叠
+" 开启折叠
 " za 折叠 za 打开
 set foldmethod=marker
 set foldmarker={,}
-"默认打开文件的时候不折叠
+" 默认打开文件的时候不折叠
 set foldlevelstart=999
 
-"开启实时搜索功能
+" 开启实时搜索功能
 set incsearch
 
-"搜索时大小写不敏感
+" 搜索时大小写不敏感
 set ignorecase
 
-"设置为粘贴模式
-"set paste
+" 设置为粘贴模式
+" set paste
 
 set clipboard=unnamed
 
-"主题
+" 主题
 syntax enable
 set background=dark
 colorscheme solarized
@@ -128,13 +120,13 @@ let g:ale_lint_delay = 100
 let g:ale_echo_msg_error_str = 'E'
 let g:ale_echo_msg_warning_str = 'W'
 let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
-let g:ale_sign_error = '❌'
-let g:ale_sign_warning = '⚠️'
+let g:ale_sign_error = 'XX'
+let g:ale_sign_warning = '!!'
 
 " YCM 配置
 let g:ycm_add_preview_to_completeopt = 0
 set completeopt-=preview
-let g:ycm_min_num_of_chars_for_completion = 2
+let g:ycm_min_num_of_chars_for_completion = 3
 let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_complete_in_comments = 1
 let g:ycm_seed_identifiers_with_syntax = 1
@@ -149,7 +141,7 @@ let g:gitgutter_sign_added = '++'
 let g:gitgutter_sign_modified = '**'
 let g:gitgutter_sign_removed = '--'
 let g:gitgutter_sign_modified_removed = '-*'
-let g:gitgutter_sign_removed_first_line = '-'
+let g:gitgutter_sign_removed_first_line = '--'
 
 let g:EasyClipAlwaysMoveCursorToEndOfPaste = 1
 let g:EasyClipPreserveCursorPositionAfterYank = 1
@@ -165,7 +157,7 @@ set laststatus=2
 
 " 快捷键映射
 let mapleader = " "
-set timeoutlen=500
+set timeoutlen=300
 " leader 的默认值为 \
 
 let g:vim_json_syntax_conceal = 0
@@ -173,7 +165,7 @@ let g:vim_json_syntax_conceal = 0
 " crontab -e edit bug
 autocmd filetype crontab setlocal nobackup nowritebackup
 
-let g:ycm_global_ycm_extra_conf = '/Users/rkd/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+let g:ycm_global_ycm_extra_conf = '/Users/rkd/.vim/plugged/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 
 let g:rustfmt_autosave = 1
 
@@ -215,3 +207,6 @@ let g:smartim_default = 'com.apple.keylayout.US'
 
 let g:jsdoc_allow_input_prompt= 1
 let g:jsdoc_enable_es6 = 1
+
+let g:tslime_always_current_session = 1
+let g:tslime_always_current_window = 1
