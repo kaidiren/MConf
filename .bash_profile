@@ -13,7 +13,7 @@ alias vi='nvim'
 alias vim='vim'
 alias f='fuck'
 alias openmd='open -a Typora.app'
-alias ta='tmux attach || tmux new'
+alias ta='tmux attach -t base || tmux new -s base'
 
 source ~/.nvm/nvm.sh
 
