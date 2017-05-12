@@ -210,3 +210,6 @@ let g:jsdoc_enable_es6 = 1
 
 let g:tslime_always_current_session = 1
 let g:tslime_always_current_window = 1
+
+let g:loaded_sql_completion = 0
+let g:omni_sql_no_default_maps = 1
