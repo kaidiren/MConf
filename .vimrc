@@ -57,6 +57,7 @@ let g:ctrlp_custom_ignore = {
   \ }
 
 " 通用配置
+set ff=unix
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
