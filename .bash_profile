@@ -37,5 +37,5 @@ fi
 
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$HOME/Library/Haskell/bin:$PATH"
-export TERM=xterm-256color
+export TERM=screen-256color
 eval "$(thefuck --alias)"
