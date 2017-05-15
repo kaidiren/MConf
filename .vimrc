@@ -1,5 +1,6 @@
 call plug#begin('~/.vim/plugged')
 
+Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
 Plug 'https://github.com/vim-scripts/L9.git'
 Plug 'https://github.com/tpope/vim-fugitive.git'
 Plug 'https://github.com/Valloric/YouCompleteMe.git'
@@ -8,12 +9,10 @@ Plug 'https://github.com/scrooloose/nerdtree.git', { 'on': 'NERDTreeToggle' }
 Plug 'https://github.com/altercation/vim-colors-solarized.git'
 Plug 'https://github.com/vim-airline/vim-airline.git'
 Plug 'https://github.com/vim-airline/vim-airline-themes.git'
-Plug 'https://github.com/Yggdroot/indentLine.git'
 Plug 'https://github.com/editorconfig/editorconfig-vim.git'
 Plug 'https://github.com/millermedeiros/vim-esformatter.git', { 'for': ['javascript', 'json'] }
 Plug 'https://github.com/pangloss/vim-javascript.git', { 'for': 'javascript' }
 Plug 'https://github.com/tpope/vim-repeat.git'
-" Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
 Plug 'https://github.com/airblade/vim-gitgutter.git'
 Plug 'https://github.com/svermeulen/vim-easyclip.git'
 Plug 'https://github.com/scrooloose/nerdcommenter.git'
@@ -33,6 +32,7 @@ Plug 'https://github.com/heavenshell/vim-jsdoc.git', { 'for': 'javascript' }
 Plug 'https://github.com/rust-lang/rust.vim.git', { 'for': 'rust' }
 Plug 'https://github.com/fatih/vim-go.git' , { 'for': 'go' }
 Plug 'https://github.com/christoomey/vim-tmux-navigator.git'
+Plug 'https://github.com/Yggdroot/indentLine.git'
 
 call plug#end()
 
@@ -77,7 +77,7 @@ set nu
 set foldmethod=marker
 set foldmarker={,}
 " 默认打开文件的时候不折叠
-set foldlevelstart=999
+set foldlevelstart=999999
 
 " 开启实时搜索功能
 set incsearch
