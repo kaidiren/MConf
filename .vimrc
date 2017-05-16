@@ -95,7 +95,7 @@ set ignorecase
 set clipboard=unnamed
 
 " 主题
-let g:solarized_termcolors=24
+let g:solarized_termtrans = 1
 syntax enable
 set background=dark
 colorscheme solarized
