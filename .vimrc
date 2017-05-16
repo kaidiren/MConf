@@ -33,15 +33,8 @@ Plug 'https://github.com/rust-lang/rust.vim.git', { 'for': 'rust' }
 Plug 'https://github.com/fatih/vim-go.git' , { 'for': 'go' }
 Plug 'https://github.com/christoomey/vim-tmux-navigator.git'
 Plug 'https://github.com/Yggdroot/indentLine.git'
-Plug 'https://github.com/jgdavey/tslime.vim.git'
 
 call plug#end()
-
-let g:tslime_always_current_session = 1
-let g:tslime_always_current_window = 1
-
-vnoremap <leader>s <plug>SendSelectionToTmux
-nnoremap <leader>s <plug>NormalModeSendToTmux
 
 let g:LargeFile= 1
 
