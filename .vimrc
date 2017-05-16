@@ -99,6 +99,7 @@ let g:solarized_termcolors=24
 syntax enable
 set background=dark
 colorscheme solarized
+let g:indentLine_setColors = 0
 
 let g:airline_powerline_fonts = 1
 let g:airline_theme='blue'
