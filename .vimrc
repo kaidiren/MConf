@@ -1,21 +1,22 @@
 call plug#begin('~/.vim/plugged')
 
-" Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
-Plug 'https://github.com/vim-scripts/L9.git'
-Plug 'https://github.com/tpope/vim-fugitive.git'
-Plug 'https://github.com/Valloric/YouCompleteMe.git'
-Plug 'https://github.com/w0rp/ale.git'
-Plug 'https://github.com/scrooloose/nerdtree.git', { 'on': 'NERDTreeToggle' }
-Plug 'https://github.com/altercation/vim-colors-solarized.git'
-Plug 'https://github.com/vim-airline/vim-airline.git'
-Plug 'https://github.com/vim-airline/vim-airline-themes.git'
-Plug 'https://github.com/editorconfig/editorconfig-vim.git'
-Plug 'https://github.com/millermedeiros/vim-esformatter.git', { 'for': ['javascript', 'json'] }
+"Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
+"Plug 'https://github.com/vim-scripts/L9.git'
+"Plug 'https://github.com/tpope/vim-fugitive.git'
+"Plug 'https://github.com/Valloric/YouCompleteMe.git'
+"Plug 'https://github.com/w0rp/ale.git'
+"Plug 'https://github.com/scrooloose/nerdtree.git', { 'on': 'NERDTreeToggle' }
+"Plug 'https://github.com/altercation/vim-colors-solarized.git'
+"Plug 'https://github.com/vim-airline/vim-airline.git'
+"Plug 'https://github.com/vim-airline/vim-airline-themes.git'
+"Plug 'https://github.com/editorconfig/editorconfig-vim.git'
+"Plug 'https://github.com/millermedeiros/vim-esformatter.git', { 'for': ['javascript', 'json'] }
 Plug 'https://github.com/pangloss/vim-javascript.git', { 'for': 'javascript' }
 Plug 'https://github.com/tpope/vim-repeat.git'
 Plug 'https://github.com/airblade/vim-gitgutter.git'
 Plug 'https://github.com/svermeulen/vim-easyclip.git'
 Plug 'https://github.com/scrooloose/nerdcommenter.git'
+
 Plug 'https://github.com/elzr/vim-json.git', { 'for': 'json' }
 Plug 'https://github.com/gioele/vim-autoswap.git'
 Plug 'https://github.com/EinfachToll/DidYouMean.git'
