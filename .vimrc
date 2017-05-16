@@ -79,7 +79,7 @@ set nu
 set foldmethod=marker
 set foldmarker={,}
 " 默认打开文件的时候不折叠
-set foldlevelstart=999999
+set nofoldenable
 
 " 开启实时搜索功能
 set incsearch
