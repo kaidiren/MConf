@@ -11,13 +11,11 @@ Plug 'https://github.com/vim-airline/vim-airline.git'
 Plug 'https://github.com/vim-airline/vim-airline-themes.git'
 Plug 'https://github.com/editorconfig/editorconfig-vim.git'
 Plug 'https://github.com/millermedeiros/vim-esformatter.git', { 'for': ['javascript', 'json'] }
-
 Plug 'https://github.com/pangloss/vim-javascript.git', { 'for': 'javascript' }
 Plug 'https://github.com/tpope/vim-repeat.git'
 Plug 'https://github.com/airblade/vim-gitgutter.git'
 Plug 'https://github.com/svermeulen/vim-easyclip.git'
 Plug 'https://github.com/scrooloose/nerdcommenter.git'
-
 Plug 'https://github.com/elzr/vim-json.git', { 'for': 'json' }
 Plug 'https://github.com/gioele/vim-autoswap.git'
 Plug 'https://github.com/EinfachToll/DidYouMean.git'
@@ -35,8 +33,15 @@ Plug 'https://github.com/rust-lang/rust.vim.git', { 'for': 'rust' }
 Plug 'https://github.com/fatih/vim-go.git' , { 'for': 'go' }
 Plug 'https://github.com/christoomey/vim-tmux-navigator.git'
 Plug 'https://github.com/Yggdroot/indentLine.git'
+Plug 'https://github.com/jgdavey/tslime.vim.git'
 
 call plug#end()
+
+let g:tslime_always_current_session = 1
+let g:tslime_always_current_window = 1
+
+vnoremap <leader>s <plug>SendSelectionToTmux
+nnoremap <leader>s <plug>NormalModeSendToTmux
 
 let g:LargeFile= 1
 
