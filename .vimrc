@@ -73,6 +73,7 @@ set encoding=utf-8
 set guicursor=
 " 行号
 set nu
+set t_Co=256
 
 " 开启折叠
 " za 折叠 za 打开
