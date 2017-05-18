@@ -100,6 +100,7 @@ colorscheme solarized
 
 let g:airline_powerline_fonts = 1
 let g:airline_theme='blue'
+let g:airline_section_a = airline#section#create_left(['mode', 'iminsert'])
 let g:airline#extensions#default#layout = [
   \ [ 'a', 'b', 'c'],
   \ [ 'z', 'x', 'y']
