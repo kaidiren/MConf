@@ -104,7 +104,7 @@ let g:airline#extensions#default#layout = [
   \ [ 'a', 'b', 'error', 'warning', 'c'],
   \ [ 'z', 'x', 'y']
   \ ]
-
+let g:airline_skip_empty_sections = 1
 " configure which whitespace checks to enable. >
 " indent: mixed indent within a line
 " long: overlong lines
