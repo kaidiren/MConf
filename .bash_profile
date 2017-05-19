@@ -18,7 +18,7 @@ alias ta='tmux attach -t base || tmux new -s base'
 source ~/.nvm/nvm.sh
 
 export PS1='\h@mac:\w\$ '
-
+PROMPT="$PROMPT"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#I_#P") "$PWD")'
 
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
