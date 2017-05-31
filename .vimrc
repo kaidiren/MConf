@@ -99,10 +99,9 @@ syntax enable
 set background=dark
 colorscheme solarized
 
-" let g:airline_skip_empty_sections = 1
+let g:airline_skip_empty_sections = 1
 let g:airline_powerline_fonts = 1
 let g:airline_theme='blue'
-let g:airline_section_error = airline#section#create(['ycm_error_count', 'ale_error_count'])
 let g:airline_section_a = airline#section#create_left(['mode'])
 let g:airline#extensions#default#layout = [
   \ [ 'a', 'b', 'error', 'warning', 'c'],
