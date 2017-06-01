@@ -142,7 +142,7 @@ let g:ycm_key_invoke_completion = '<C-x>'
 let g:ycm_echo_current_diagnostic = 1
 let g:ycm_seed_identifiers_with_syntax = 1
 
-set updatetime=200
+set updatetime=100
 
 let g:gitgutter_sign_added = '++'
 let g:gitgutter_sign_modified = '**'
