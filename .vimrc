@@ -222,3 +222,11 @@ let g:loaded_sql_completion = 0
 let g:omni_sql_no_default_maps = 1
 
 let g:go_list_type = "quickfix"
+
+
+nnoremap <Leader>r :call <SID>TmuxRepeat()<CR>
+
+function! s:TmuxRepeat()
+  silent! exec "!tmux select-pane -l && tmux send up enter && tmux select-pane -l"
+  redraw!
+endfunction
