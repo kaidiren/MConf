@@ -1,6 +1,7 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
+Plug '/usr/local/opt/fzf'
 Plug 'https://github.com/vim-scripts/L9.git'
 Plug 'https://github.com/tpope/vim-fugitive.git'
 Plug 'https://github.com/Valloric/YouCompleteMe.git'
