@@ -11,3 +11,6 @@ npm-debug.log
 
 #dir
 node_modules
+dist
+.nyc_output
+.git
