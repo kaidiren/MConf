@@ -14,8 +14,8 @@ alias vim='vim'
 alias f='fuck'
 alias openmd='open -a Typora.app'
 alias ta='tmux attach -t base || tmux new -s base'
-alias tmux-save='~/.tmux/plugin/tmux-resurrect/scripts/save.sh'
-alias tmux-restore='~/.tmux/plugin/tmux-resurrect/scripts/restore.sh'
+alias tmux-save='tmux run-shell "/Users/rkd/.tmux/plugin/tmux-resurrect/scripts/save.sh"'
+alias tmux-restore='tmux run-shell "/Users/rkd/.tmux/plugin/tmux-resurrect/scripts/restore.sh"'
 
 source ~/.nvm/nvm.sh
 
