@@ -79,7 +79,7 @@ set foldmethod=marker
 set foldmarker={,}
 " 默认打开文件的时候不折叠
 " set foldlevelstart=999
-" autocmd BufWinEnter * normal zR
+autocmd BufWinEnter * normal zR
 autocmd BufRead * normal zR
 
 " 开启实时搜索功能
