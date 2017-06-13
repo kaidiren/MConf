@@ -90,7 +90,7 @@
       "always"
     ],
     "space-before-function-paren": [
-      2,
+      1,
       "never"
     ],
     "space-in-parens": [
