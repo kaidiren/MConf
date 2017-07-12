@@ -235,3 +235,5 @@ function! s:formatJS()
   silent ! exec "eslint % --fix"
   redraw!
 endfunction
+
+command! -range=0 -complete=shellcmd Esformatter call s:formatJS()
