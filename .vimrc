@@ -232,7 +232,7 @@ function! s:TmuxRepeat()
 endfunction
 
 function! s:formatJS()
-  call "eslint " . expand('%') . " --fix"
+  silent! exec "!eslint " . expand('%') . " --fix"
 endfunction
 
-command! -complete=shellcmd JS call s:formatJS()
+command! -complete=shellcmd Eslint call s:formatJS()
