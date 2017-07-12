@@ -230,3 +230,8 @@ function! s:TmuxRepeat()
   silent! exec "!tmux select-pane -l && tmux send up enter && tmux select-pane -l"
   redraw!
 endfunction
+
+function! s:formatJS()
+  silent ! exec "eslint % --fix"
+  redraw!
+endfunction
