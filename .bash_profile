@@ -11,7 +11,6 @@ alias emacs='emacs -nw'
 alias e='emacs -nw'
 alias vi='nvim'
 alias vim='vim'
-alias f='fuck'
 alias openmd='open -a Typora.app'
 alias ta='tmux attach -t base || tmux new -s base'
 alias tmux-save='tmux run-shell "/Users/rkd/.tmux/plugin/tmux-resurrect/scripts/save.sh"'
@@ -22,7 +21,6 @@ source ~/.nvm/nvm.sh
 export PS1='\h@mac:\w\$ '
 
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
-
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
@@ -35,5 +33,3 @@ export GOPATH="/Users/rkd/./.gopath"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$HOME/Library/Haskell/bin:$PATH"
 export TERM=screen-256color
-eval "$(thefuck --alias)"
-[[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn
