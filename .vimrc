@@ -7,8 +7,8 @@ Plug 'https://github.com/Valloric/YouCompleteMe.git'
 Plug 'https://github.com/w0rp/ale.git'
 Plug 'https://github.com/scrooloose/nerdtree.git', { 'on': 'NERDTreeToggle' }
 Plug 'https://github.com/altercation/vim-colors-solarized.git'
-Plug 'https://github.com/vim-airline/vim-airline.git'
-Plug 'https://github.com/vim-airline/vim-airline-themes.git'
+Plug 'https://github.com/kaidiren/vim-airline.git'
+Plug 'https://github.com/kaidiren/vim-airline-themes.git'
 Plug 'https://github.com/editorconfig/editorconfig-vim.git'
 Plug 'https://github.com/millermedeiros/vim-esformatter.git', { 'for': ['javascript', 'json'] }
 Plug 'https://github.com/pangloss/vim-javascript.git', { 'for': 'javascript' }
