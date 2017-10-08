@@ -28,7 +28,7 @@ export EDITOR=vim
 
 source ~/.env
 
-export GOPATH="/Users/rkd/./.gopath"
+export GOPATH="/Users/rkd/go"
 
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$HOME/Library/Haskell/bin:$PATH"
