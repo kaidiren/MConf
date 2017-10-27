@@ -33,8 +33,6 @@ Plug 'https://github.com/rust-lang/rust.vim.git', { 'for': 'rust' }
 Plug 'https://github.com/fatih/vim-go.git' , { 'for': 'go' }
 Plug 'https://github.com/christoomey/vim-tmux-navigator.git'
 Plug 'https://github.com/Yggdroot/indentLine.git'
-Plug 'https://github.com/brooth/far.vim.git'
-Plug 'https://github.com/mkitt/tabline.vim.git'
 
 call plug#end()
 
