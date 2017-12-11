@@ -33,7 +33,6 @@ Plug 'https://github.com/rust-lang/rust.vim.git', { 'for': 'rust' }
 Plug 'https://github.com/fatih/vim-go.git' , { 'for': 'go' }
 Plug 'https://github.com/christoomey/vim-tmux-navigator.git'
 Plug 'https://github.com/Yggdroot/indentLine.git'
-" Plug 'https://github.com/terryma/vim-multiple-cursors.git'
 
 call plug#end()
 
@@ -132,7 +131,7 @@ let g:ale_echo_msg_warning_str = 'W'
 let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 let g:ale_sign_error = 'XX'
 let g:ale_sign_warning = '!!'
-let g:ale_lint_on_text_changed = 'never'
+" let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_enter = 0
 
 
