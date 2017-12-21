@@ -14,6 +14,7 @@ alias vi='nvim'
 alias vim='vim'
 alias openmd='open -a Typora.app'
 alias ta='tmux attach -t base || tmux new -s base'
+alias tb='tmux attach -t vs || tmux new -s vs'
 alias tmux-save='tmux run-shell "/Users/rkd/.tmux/plugin/tmux-resurrect/scripts/save.sh"'
 alias tmux-restore='tmux run-shell "/Users/rkd/.tmux/plugin/tmux-resurrect/scripts/restore.sh"'
 
