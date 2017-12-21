@@ -131,8 +131,8 @@ let g:ale_echo_msg_warning_str = 'W'
 let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 let g:ale_sign_error = 'XX'
 let g:ale_sign_warning = '!!'
-" let g:ale_lint_on_text_changed = 'never'
-" let g:ale_lint_on_enter = 0
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_enter = 0
 
 
 " YCM 配置
