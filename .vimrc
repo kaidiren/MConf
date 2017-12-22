@@ -181,21 +181,8 @@ let g:ycm_global_ycm_extra_conf = '/Users/rkd/.vim/plugged/YouCompleteMe/third_p
 
 let g:rustfmt_autosave = 1
 
-" 利用Tab键和Shift-Tab键来缩进文本
-" V 选中整行 > 向右缩进 < 向左缩进
-nmap <tab> V>
-nmap <s-tab> V<
-vmap <tab> >gv
-vmap <s-tab> <gv
-
 " 取消搜索高亮
 nnoremap <silent> <leader><Esc> :<C-u>nohlsearch<CR>
-
-" 退出
-nnoremap <leader>q :q<CR>
-
-"保存
-nnoremap <leader>w :w<CR>
 
 " 复制光标所在的单词
 nnoremap <silent> <leader>y viwy
