@@ -49,3 +49,5 @@ _truffle()
 }
 
 complete -o default -F _truffle  truffle
+
+alias eosioc='docker-compose exec walletd /opt/eosio/bin/eosioc -H eosiod'
