@@ -12,8 +12,6 @@ alias e='emacs -nw'
 alias v='nvim'
 alias vi='nvim'
 alias vim='vim'
-alias ide='idea'
-alias i='idea'
 alias openmd='open -a Typora.app'
 alias ta='tmux attach -t base || tmux new -s base'
 alias tb='tmux attach -t vs || tmux new -s vs'
@@ -36,6 +34,7 @@ export GOPATH="/Users/rkd/go"
 
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$HOME/Library/Haskell/bin:$PATH"
+export PATH="$GOPATH:$PATH"
 export TERM=screen-256color
 
 
