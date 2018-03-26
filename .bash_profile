@@ -34,7 +34,7 @@ export GOPATH="/Users/rkd/go"
 
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$HOME/Library/Haskell/bin:$PATH"
-export PATH="$GOPATH:$PATH"
+export PATH="/Users/rkd/go/bin:$PATH"
 export TERM=screen-256color
 
 
