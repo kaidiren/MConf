@@ -52,3 +52,6 @@ _truffle()
 complete -o default -F _truffle  truffle
 
 alias eosioc='docker-compose exec walletd /opt/eosio/bin/eosioc -H eosiod'
+
+export WASM_LLVM_CONFIG=/Users/rkd/blockchain/llvm/build/bin/llvm-config
+export LLVM_DIR=/usr/local/Cellar/llvm/5.0.1/lib/cmake/llvm
