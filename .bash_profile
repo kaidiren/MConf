@@ -56,4 +56,3 @@ alias eosioc='docker-compose exec walletd /opt/eosio/bin/eosioc -H eosiod'
 export WASM_LLVM_CONFIG=/Users/rkd/blockchain/llvm/build/bin/llvm-config
 export WASM_ROOT=/Users/rkd/blockchain/llvm/build/bin
 export LLVM_DIR=/usr/local/Cellar/llvm/5.0.1/lib/cmake/llvm
-source /usr/local/opt/autoenv/activate.sh
