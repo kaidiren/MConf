@@ -59,3 +59,17 @@ export LLVM_DIR=/usr/local/Cellar/llvm/5.0.1/lib/cmake/llvm
 
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home"
 export PATH="${JAVA_HOME}/bin:$PATH"
+
+
+_dep()
+{
+  local first="init ensure status prune version"
+  local cur=${COMP_WORDS[COMP_CWORD]}
+  local prev=${COMP_WORDS[COMP_CWORD-1]} # previous argument
+  case "$COMP_CWORD" in
+    1) COMPREPLY=( $(compgen -W "$first" -- $cur) ) ;;
+    *) COMPREPLY=( $(compgen -W "$(ls)"  -- $cur) ) ;;
+  esac
+}
+
+complete -o default -F _dep  dep
