@@ -73,5 +73,3 @@ _dep()
 }
 
 complete -o default -F _dep  dep
-LLVM_DIR=/usr/local/Cellar/llvm/6.0.0/lib/cmake
-export PATH="/usr/local/opt/Gettext/bin:$PATH"
