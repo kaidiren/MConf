@@ -73,3 +73,4 @@ _dep()
 }
 
 complete -o default -F _dep  dep
+export PATH="/usr/local/opt/gettext/bin:$PATH"
