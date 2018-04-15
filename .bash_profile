@@ -51,12 +51,6 @@ _truffle()
 
 complete -o default -F _truffle  truffle
 
-alias eosioc='docker-compose exec walletd /opt/eosio/bin/eosioc -H eosiod'
-
-export WASM_LLVM_CONFIG=/Users/rkd/blockchain/llvm/build/bin/llvm-config
-export WASM_ROOT=/Users/rkd/blockchain/llvm/build/bin
-export LLVM_DIR=/usr/local/Cellar/llvm/5.0.1/lib/cmake/llvm
-
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home"
 export PATH="${JAVA_HOME}/bin:$PATH"
 
@@ -73,3 +67,5 @@ _dep()
 }
 
 complete -o default -F _dep  dep
+export LLVM_DIR=/usr/local/Cellar/llvm@4/4.0.1/lib/cmake
+export PATH="/usr/local/opt/gettext/bin:$PATH"
