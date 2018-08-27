@@ -33,8 +33,12 @@ Plug 'https://github.com/rust-lang/rust.vim.git', { 'for': 'rust' }
 Plug 'https://github.com/fatih/vim-go.git' , { 'for': 'go' }
 Plug 'https://github.com/christoomey/vim-tmux-navigator.git'
 Plug 'https://github.com/Yggdroot/indentLine.git'
+Plug 'https://github.com/leafgarland/typescript-vim', { 'for': 'typescript' }
+Plug 'https://github.com/tomlion/vim-solidity.git', { 'for': 'solidity' }
 
 call plug#end()
+
+let g:deoplete#enable_at_startup = 1
 
 let g:LargeFile= 1
 
@@ -121,7 +125,7 @@ let g:airline#extensions#whitespace#checks = [ 'indent', 'trailing', 'long', 'mi
 "NERDTree
 map <silent> <C-t> :NERDTreeToggle<CR>
 
-let g:ale_linters = {'js': ['eslint_d --cache']}
+let g:ale_linters = {'js': ['standard'], 'erlang': ['syntaxerl'], }
 let g:ale_set_quickfix = 1
 let g:ale_sign_column_always = 1
 let g:ale_open_list = 0
@@ -177,7 +181,7 @@ let g:vim_json_syntax_conceal = 0
 " crontab -e edit bug
 autocmd filetype crontab setlocal nobackup nowritebackup
 
-let g:ycm_global_ycm_extra_conf = '/Users/rkd/.vim/plugged/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+let g:ycm_global_ycm_extra_conf = '/Users/rkd/.vim/plugged/YouCompleteMe/.ycm_extra_conf.py'
 
 let g:rustfmt_autosave = 1
 
@@ -214,6 +218,9 @@ let g:loaded_sql_completion = 0
 let g:omni_sql_no_default_maps = 1
 
 let g:go_list_type = "quickfix"
+let g:go_fmt_command = "goimports"
+let g:go_highlight_types = 1
+let g:go_highlight_functions = 1
 
 
 nnoremap <Leader>r :call <SID>TmuxRepeat()<CR>
@@ -223,8 +230,11 @@ function! s:TmuxRepeat()
   redraw!
 endfunction
 
-function! s:eslintFix()
-  silent! exec "!eslint " . expand('%') . " --fix"
-endfunction
+" function! s:eslintFix()
+"   silent! exec "!eslint " . expand('%') . " --fix"
+" endfunction
+"
+" command! -complete=shellcmd Fix call s:eslintFix()s
 
-command! -complete=shellcmd Fix call s:eslintFix()
+autocmd bufwritepost *.js silent !standard --fix %
+set autoread
