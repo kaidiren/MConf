@@ -11,15 +11,15 @@ alias emacs='emacs -nw'
 alias e='emacs -nw'
 alias v='nvim'
 alias vi='nvim'
-alias vim='vim'
-alias openmd='open -a Typora.app'
+alias md='open -a Typora.app'
 alias ta='tmux attach -t base || tmux new -s base'
 alias tb='tmux attach -t vs || tmux new -s vs'
 alias tmux-save='tmux run-shell "/Users/rkd/.tmux/plugin/tmux-resurrect/scripts/save.sh"'
 alias tmux-restore='tmux run-shell "/Users/rkd/.tmux/plugin/tmux-resurrect/scripts/restore.sh"'
 alias rm='rmtrash'
 
-source ~/.nvm/nvm.sh
+export NVM_DIR="$HOME/.nvm"
+source "/usr/local/opt/nvm/nvm.sh"
 
 export PS1='\h@mac:\w\$ '
 
@@ -27,15 +27,16 @@ export PS1='\h@mac:\w\$ '
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
-export EDITOR=vim
+export EDITOR="/usr/local/bin/nvim"
 
 source ~/.env
 
 export GOPATH="/Users/rkd/go"
 
 export PATH="/usr/local/sbin:$PATH"
-export PATH="$HOME/Library/Haskell/bin:$PATH"
+export PATH="/usr/local/bin:$PATH"
 export PATH="/Users/rkd/go/bin:$PATH"
+export PATH="/Users/rkd/Library/Python/3.6/bin:$PATH"
 export TERM=screen-256color
 
 
@@ -68,5 +69,35 @@ _dep()
 }
 
 complete -o default -F _dep  dep
+
+
+
+_go()
+{
+  local first="build clean doc env bug fix fmt generate get install list run test tool version vet"
+  local cur=${COMP_WORDS[COMP_CWORD]}
+  local prev=${COMP_WORDS[COMP_CWORD-1]} # previous argument
+  case "$COMP_CWORD" in
+    1) COMPREPLY=( $(compgen -W "$first" -- $cur) ) ;;
+    *) COMPREPLY=( $(compgen -W "$(ls)"  -- $cur) ) ;;
+  esac
+}
+
+complete -o default -F _go go
+
 export LLVM_DIR=/usr/local/Cellar/llvm@4/4.0.1/lib/cmake
 export PATH="/usr/local/opt/gettext/bin:$PATH"
+export PATH="$PATH:/usr/local/opt/go/libexec/bin"
+export PATH="$PATH:/usr/local/eosio/bin"
+
+# Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
+export COCOS_CONSOLE_ROOT=/Users/rkd/game/cocos2d-x-3.17/tools/cocos2d-console/bin
+export PATH=$COCOS_CONSOLE_ROOT:$PATH
+
+# Add environment variable COCOS_X_ROOT for cocos2d-x
+export COCOS_X_ROOT=/Users/rkd/game
+export PATH=$COCOS_X_ROOT:$PATH
+
+# Add environment variable COCOS_TEMPLATES_ROOT for cocos2d-x
+export COCOS_TEMPLATES_ROOT=/Users/rkd/game/cocos2d-x-3.17/templates
+export PATH=$COCOS_TEMPLATES_ROOT:$PATH
