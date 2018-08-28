@@ -37,6 +37,7 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="/Users/rkd/go/bin:$PATH"
 export PATH="/Users/rkd/Library/Python/3.6/bin:$PATH"
+export PATH="/Users/rkd/Library/Python/3.7/bin:$PATH"
 export TERM=screen-256color
 
 
