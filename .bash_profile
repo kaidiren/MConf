@@ -101,3 +101,5 @@ export PATH=$COCOS_X_ROOT:$PATH
 # Add environment variable COCOS_TEMPLATES_ROOT for cocos2d-x
 export COCOS_TEMPLATES_ROOT=/Users/rkd/game/cocos2d-x-3.17/templates
 export PATH=$COCOS_TEMPLATES_ROOT:$PATH
+
+[[ -s "/Users/rkd/.gvm/scripts/gvm" ]] && source "/Users/rkd/.gvm/scripts/gvm"
