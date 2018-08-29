@@ -33,7 +33,7 @@ source ~/.env
 
 export GOPATH="/Users/rkd/go"
 export PATH="/Users/rkd/go/bin:$PATH"
-export PATH="$PATH:/usr/local/opt/go/libexec/bin"
+# export PATH="$PATH:/usr/local/opt/go/libexec/bin"
 
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/bin:$PATH"
