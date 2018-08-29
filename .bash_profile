@@ -32,10 +32,11 @@ export EDITOR="/usr/local/bin/nvim"
 source ~/.env
 
 export GOPATH="/Users/rkd/go"
+export PATH="/Users/rkd/go/bin:$PATH"
+export PATH="$PATH:/usr/local/opt/go/libexec/bin"
 
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/bin:$PATH"
-export PATH="/Users/rkd/go/bin:$PATH"
 export PATH="/Users/rkd/Library/Python/3.6/bin:$PATH"
 export PATH="/Users/rkd/Library/Python/3.7/bin:$PATH"
 export TERM=screen-256color
