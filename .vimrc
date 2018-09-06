@@ -20,7 +20,7 @@ Plug 'https://github.com/elzr/vim-json.git', { 'for': 'json' }
 Plug 'https://github.com/gioele/vim-autoswap.git'
 Plug 'https://github.com/EinfachToll/DidYouMean.git'
 Plug 'https://github.com/wincent/terminus.git'
-Plug 'https://github.com/kaidiren/smartim.git'
+"Plug 'https://github.com/kaidiren/smartim.git'
 Plug 'https://github.com/dietsche/vim-lastplace.git'
 Plug 'https://github.com/mileszs/ack.vim.git'
 Plug 'https://github.com/MattesGroeger/vim-bookmarks.git'
@@ -236,5 +236,5 @@ endfunction
 "
 " command! -complete=shellcmd Fix call s:eslintFix()s
 
-autocmd bufwritepost *.js silent !standard --fix %
+autocmd bufwritepost *.js silent !standard --fix %<CR>
 set autoread
