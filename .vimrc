@@ -126,6 +126,11 @@ let g:airline#extensions#whitespace#checks = [ 'indent', 'trailing', 'long', 'mi
 map <silent> <C-t> :NERDTreeToggle<CR>
 
 let g:ale_linters = {'js': ['standard'], 'erlang': ['syntaxerl'], }
+let g:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\   'javascript': ['standard'],
+\}
+let g:ale_fix_on_save = 1
 let g:ale_set_quickfix = 1
 let g:ale_sign_column_always = 1
 let g:ale_open_list = 0
@@ -236,5 +241,5 @@ endfunction
 "
 " command! -complete=shellcmd Fix call s:eslintFix()s
 
-autocmd bufwritepost *.js silent !standard --fix %<CR>
-set autoread
+" autocmd bufwritepost *.js silent !standard --fix %<CR>
+" set autoread
