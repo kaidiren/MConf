@@ -125,7 +125,7 @@ let g:airline#extensions#whitespace#checks = [ 'indent', 'trailing', 'long', 'mi
 "NERDTree
 map <silent> <C-t> :NERDTreeToggle<CR>
 
-let g:ale_linters = {'js': ['standard'], 'erlang': ['syntaxerl'], }
+let g:ale_linters = {'javascript': ['standard'], 'erlang': ['syntaxerl'], }
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
 \   'javascript': ['standard'],
