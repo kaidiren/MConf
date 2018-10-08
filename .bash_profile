@@ -103,3 +103,4 @@ complete -o default -F _go go
 # # Add environment variable COCOS_TEMPLATES_ROOT for cocos2d-x
 # export COCOS_TEMPLATES_ROOT=/Users/rkd/game/cocos2d-x-3.17/templates
 # export PATH=$COCOS_TEMPLATES_ROOT:$PATH
+export PATH="/usr/local/opt/ncurses/bin:$PATH"
