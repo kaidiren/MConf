@@ -91,6 +91,7 @@ export LLVM_DIR=/usr/local/Cellar/llvm@4/4.0.1/lib/cmake
 export PATH="/usr/local/opt/gettext/bin:$PATH"
 export PATH="$PATH:/usr/local/opt/go/libexec/bin"
 export PATH="$PATH:/usr/local/eosio/bin"
+
 #
 # # Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
 # export COCOS_CONSOLE_ROOT=/Users/rkd/game/cocos2d-x-3.17/tools/cocos2d-console/bin
