@@ -87,7 +87,7 @@ _go()
 
 complete -o default -F _go go
 
-export LLVM_DIR=/usr/local/Cellar/llvm@4/4.0.1/lib/cmake
+#export LLVM_DIR=/usr/local/Cellar/llvm@4/4.0.1/lib/cmake
 export PATH="/usr/local/opt/gettext/bin:$PATH"
 export PATH="$PATH:/usr/local/opt/go/libexec/bin"
 export PATH="$PATH:/usr/local/eosio/bin"
