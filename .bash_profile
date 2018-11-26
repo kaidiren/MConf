@@ -110,3 +110,4 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/usr/local/lib64
 export QT_HOMEBREW=true
+export PATH="/usr/local/opt/qt/bin:$PATH"
