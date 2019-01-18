@@ -25,8 +25,6 @@ export PS1='\h@mac:\w\$ '
 
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
-test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
-
 export EDITOR="/usr/local/bin/nvim"
 
 source ~/.env
