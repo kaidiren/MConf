@@ -29,10 +29,6 @@ export EDITOR="/usr/local/bin/nvim"
 
 source ~/.env
 
-export GOPATH="/Users/rkd/go"
-export PATH="/Users/rkd/go/bin:$PATH"
-# export PATH="$PATH:/usr/local/opt/go/libexec/bin"
-
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="/Users/rkd/Library/Python/3.6/bin:$PATH"
@@ -85,9 +81,6 @@ _go()
 
 complete -o default -F _go go
 
-#export LLVM_DIR=/usr/local/Cellar/llvm@4/4.0.1/lib/cmake
-#export PATH="/usr/local/opt/gettext/bin:$PATH"
-#export PATH="$PATH:/usr/local/opt/go/libexec/bin"
 export PATH="$PATH:/usr/local/eosio/bin"
 
 #
