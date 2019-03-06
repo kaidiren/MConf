@@ -103,3 +103,4 @@ export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/usr/local/lib64
 export QT_HOMEBREW=true
 export PATH="/usr/local/opt/qt/bin:$PATH"
 source /Users/rkd/.gvm/scripts/gvm
+export GPG_TTY=$(tty)
