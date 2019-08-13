@@ -19,7 +19,8 @@ alias tmux-restore='tmux run-shell "/Users/rkd/.tmux/plugin/tmux-resurrect/scrip
 alias rm='rmtrash'
 
 export NVM_DIR="$HOME/.nvm"
-source "/usr/local/opt/nvm/nvm.sh"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
 
 export PS1='\h@mac:\w\$ '
 
@@ -31,57 +32,61 @@ source ~/.env
 
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/bin:$PATH"
-export PATH="/Users/rkd/Library/Python/3.6/bin:$PATH"
 export PATH="/Users/rkd/Library/Python/3.7/bin:$PATH"
 export TERM=screen-256color
 
 
-_truffle()
-{
-  local first="help version init compile migrate deploy build test console install publish networks watch serve exec unbox"
-  local cur=${COMP_WORDS[COMP_CWORD]}
-  local prev=${COMP_WORDS[COMP_CWORD-1]} # previous argument
-  case "$COMP_CWORD" in
-    1) COMPREPLY=( $(compgen -W "$first" -- $cur) ) ;;
-    *) COMPREPLY=( $(compgen -W "$(ls)"  -- $cur) ) ;;
-  esac
-}
+# _truffle()
+# {
+#   local first="help version init compile migrate deploy build test console install publish networks watch serve exec unbox"
+#   local cur=${COMP_WORDS[COMP_CWORD]}
+#   local prev=${COMP_WORDS[COMP_CWORD-1]} # previous argument
+#   case "$COMP_CWORD" in
+#     1) COMPREPLY=( $(compgen -W "$first" -- $cur) ) ;;
+#     *) COMPREPLY=( $(compgen -W "$(ls)"  -- $cur) ) ;;
+#   esac
+# }
+#
+# complete -o default -F _truffle  truffle
 
-complete -o default -F _truffle  truffle
+# 8
+# export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home"
+# export PATH="${JAVA_HOME}/bin:$PATH"
 
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home"
+# 12
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home"
 export PATH="${JAVA_HOME}/bin:$PATH"
 
 
-_dep()
-{
-  local first="init ensure status prune version"
-  local cur=${COMP_WORDS[COMP_CWORD]}
-  local prev=${COMP_WORDS[COMP_CWORD-1]} # previous argument
-  case "$COMP_CWORD" in
-    1) COMPREPLY=( $(compgen -W "$first" -- $cur) ) ;;
-    *) COMPREPLY=( $(compgen -W "$(ls)"  -- $cur) ) ;;
-  esac
-}
-
-complete -o default -F _dep  dep
-
-
-
-_go()
-{
-  local first="build clean doc env bug fix fmt generate get install list run test tool version vet"
-  local cur=${COMP_WORDS[COMP_CWORD]}
-  local prev=${COMP_WORDS[COMP_CWORD-1]} # previous argument
-  case "$COMP_CWORD" in
-    1) COMPREPLY=( $(compgen -W "$first" -- $cur) ) ;;
-    *) COMPREPLY=( $(compgen -W "$(ls)"  -- $cur) ) ;;
-  esac
-}
-
-complete -o default -F _go go
-
-export PATH="$PATH:/usr/local/eosio/bin"
+# _dep()
+# {
+#   local first="init ensure status prune version"
+#   local cur=${COMP_WORDS[COMP_CWORD]}
+#   local prev=${COMP_WORDS[COMP_CWORD-1]} # previous argument
+#   case "$COMP_CWORD" in
+#     1) COMPREPLY=( $(compgen -W "$first" -- $cur) ) ;;
+#     *) COMPREPLY=( $(compgen -W "$(ls)"  -- $cur) ) ;;
+#   esac
+# }
+#
+# complete -o default -F _dep  dep
+#
+#
+#
+# _go()
+# {
+#   local first="build clean doc env bug fix fmt generate get install list run test tool version vet"
+#   local cur=${COMP_WORDS[COMP_CWORD]}
+#   local prev=${COMP_WORDS[COMP_CWORD-1]} # previous argument
+#   case "$COMP_CWORD" in
+#     1) COMPREPLY=( $(compgen -W "$first" -- $cur) ) ;;
+#     *) COMPREPLY=( $(compgen -W "$(ls)"  -- $cur) ) ;;
+#   esac
+# }
+#
+# complete -o default -F _go go
+#
+# export PATH="$PATH:/usr/local/eosio/bin"
 
 #
 # # Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
