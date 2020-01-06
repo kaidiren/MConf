@@ -32,12 +32,11 @@ Plug 'https://github.com/fatih/vim-go.git' , { 'for': 'go' }
 Plug 'https://github.com/christoomey/vim-tmux-navigator.git'
 Plug 'https://github.com/Yggdroot/indentLine.git'
 Plug 'https://github.com/leafgarland/typescript-vim', { 'for': 'typescript' }
+Plug 'https://github.com/peitalin/vim-jsx-typescript.git', { 'for': 'typescript.tsx' }
 Plug 'https://github.com/tomlion/vim-solidity.git', { 'for': 'solidity' }
-Plug 'https://github.com/sbdchd/neoformat.git', { 'for': 'javascript' }
+Plug 'https://github.com/rhysd/vim-fixjson.git', { 'for': 'json' }
 
 call plug#end()
-
-"let g:deoplete#enable_at_startup = 1
 
 let g:LargeFile= 1
 
@@ -81,9 +80,9 @@ set t_Co=256
 set foldmethod=marker
 set foldmarker={,}
 " 默认打开文件的时候不折叠
-" set foldlevelstart=999
-autocmd BufWinEnter * normal zR
-autocmd BufRead * normal zR
+set foldlevelstart=999
+" autocmd BufWinEnter * normal zR
+" autocmd BufRead * normal zR
 
 " 开启实时搜索功能
 set incsearch
@@ -95,6 +94,9 @@ set ignorecase
 " set paste
 
 set clipboard=unnamed
+
+" set filetypes as typescript.tsx
+autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescript.tsx
 
 " 主题
 " let g:solarized_termtrans = 1
@@ -121,23 +123,30 @@ let g:airline_symbols.notexists = ''
 let g:airline#extensions#whitespace#enabled = 0
 let g:airline#extensions#whitespace#checks = [ 'indent', 'trailing', 'long', 'mixed-indent-file' ]
 
-let g:ale_linters = {
-\  'javascript': ['standard'],
-\  'erlang': ['syntaxerl'],
-\  'rust': ['rustc']
+let g:ale_linter_aliases = {'typescript.tsx': 'typescript'}
+let g:ale_fixers = {
+\   'javascript': ['eslint'],
+\   'typescript': ['eslint'],
+\   'typescriptreact': ['eslint'],
+\   'typescript.tsx': ['eslint'],
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\   'rust': ['rustfmt']
 \}
 
-let g:ale_fixers = {
-\   '*': ['remove_trailing_lines', 'trim_whitespace'],
-\   'javascript': ['standard'],
-\   'rust': ['rustfmt']
+" standard
+let g:ale_linters = {
+\  'javascript': ['eslint'],
+\  'typescript': ['eslint'],
+\  'typescriptreact': ['eslint'],
+\   'typescript.tsx': ['eslint'],
+\  'rust': ['rustc']
 \}
 
 let g:ale_lint_on_save = 1
 let g:ale_fix_on_save = 1
-let g:ale_set_quickfix = 1
 let g:ale_sign_column_always = 1
 let g:ale_open_list = 0
+let g:ale_set_quickfix = 1
 let g:ale_lint_delay = 10
 let g:ale_echo_msg_error_str = 'E'
 let g:ale_echo_msg_warning_str = 'W'
@@ -234,10 +243,13 @@ function! s:TmuxRepeat()
   redraw!
 endfunction
 
-let g:neoformat_enabled_javascript = ['standard']
-let g:neoformat_only_msg_on_error = 1
+" let g:neoformat_enabled_javascript = ['standard']
+" let g:neoformat_only_msg_on_error = 1
 
-augroup fmt
-  autocmd!
-  au BufWritePre *.js try | undojoin | Neoformat | catch /^Vim\%((\a\+)\)\=:E790/ | finally | silent Neoformat | endtry
-augroup END
+" augroup fmt
+"   autocmd!
+"   au BufWritePre *.js try | undojoin | Neoformat | catch /^Vim\%((\a\+)\)\=:E790/ | finally | silent Neoformat | endtry
+" augroup END
+
+" autocmd bufwritepost *.js silent !standard --fix %
+" set autoread

@@ -1,0 +1,28 @@
+[user]
+	email = kaidiren@gmail.com
+	name = kaidiren
+	signingkey = 911147DBF2808FD1
+[alias]
+  st = status
+  co = checkout
+  df = diff
+  dw = diff --word-diff
+  lg = log --color --graph --pretty=format:'%C(magenta)%G?%Creset %Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+[push]
+  default = simple
+[core]
+  editor = vim
+	excludesfile = /Users/rkd/.gitignore_global
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[help]
+	autocorrect = 1
+[submodule]
+	recurse = true
+[commit]
+	gpgsign = true
+[tag]
+  forceSignAnnotated = true
